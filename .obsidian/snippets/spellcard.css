@@ -1,0 +1,37 @@
+.spell-card {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.spell-card h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.spell-card p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.spell-card blockquote {
+    background-color: #fff;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.spell-card strong {
+    color: #2c3e50;
+}
+
+.spell-card .spell-description {
+    font-style: italic;
+    color: #555;
+}
