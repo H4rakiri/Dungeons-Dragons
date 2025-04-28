@@ -211,7 +211,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 400.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -229,8 +229,8 @@
   },
   "active": "e084fa83964a72c9",
   "lastOpenFiles": [
-    "spell-card-template.md",
     "Адское возмездте.md",
+    "spell-card-template.md",
     "Квесты и сюжеты/Сюжеты/Пиздатый сюжет.md",
     "Квесты и сюжеты/Квесты/Найти принцессу.md",
     "Миры/Таверны/Генератор.md",
