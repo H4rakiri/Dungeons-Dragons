@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "адское-возмездие.md",
+                "file": "spell-card-template.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "адское-возмездие"
+              "title": "spell-card-template"
             }
           }
         ]
@@ -229,8 +229,8 @@
   },
   "active": "e084fa83964a72c9",
   "lastOpenFiles": [
-    "spell-card-template.md",
     "адское-возмездие.md",
+    "spell-card-template.md",
     "Адское возмездте.md",
     "Квесты и сюжеты/Сюжеты/Пиздатый сюжет.md",
     "Квесты и сюжеты/Квесты/Найти принцессу.md",
