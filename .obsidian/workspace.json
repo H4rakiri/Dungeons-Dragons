@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "674202aa0ba26ee3",
+        "id": "de6bea5c0edd2dbf",
         "type": "tabs",
         "children": [
           {
-            "id": "3e68e22bd1511362",
+            "id": "e084fa83964a72c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "spell-card-template.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -227,7 +227,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3e68e22bd1511362",
+  "active": "e084fa83964a72c9",
   "lastOpenFiles": [
     "spell-card-template.md",
     "Адское возмездте.md",
