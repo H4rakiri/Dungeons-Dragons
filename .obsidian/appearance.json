@@ -1,0 +1,9 @@
+{
+  "cssTheme": "",
+  "theme": "system",
+  "enabledCssSnippets": [
+    "preview-default",
+    "dnd-obsidian",
+    "DnD Style"
+  ]
+}
