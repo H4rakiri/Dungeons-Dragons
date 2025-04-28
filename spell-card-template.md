@@ -1,11 +1,13 @@
 ---
 cssclass: spell-card
 ---
+
 <div class="spell-container">
 	<div class="spell-header">
 		<h1 class="spell-name">Адское возмездие</h1>
 		<div class="spell-level">1 уровень, воплощение</div>
 	</div>
+	
     <div class="spell-grid">
     	<div class="stat-card">
     		<div class="stat-label">ВРЕМЯ НАКЛАДЫВАНИЯ</div>
@@ -24,6 +26,7 @@ cssclass: spell-card
     		<div class="stat-value">Мгновенная</div>
     	</div>
     </div>
+    
     <div class="spell-meta">
     	<div class="meta-grid">
     		<div class="meta-item">
@@ -40,6 +43,7 @@ cssclass: spell-card
     		</div>
     	</div>
     </div>
+    
     <div class="spell-description">
     	<div class="description-text">
     		Вы указываете пальцем, и существо, причинившее вам урон, мгновенно окружается пламенем. Существо должно совершить спасбросок Ловкости. Оно получает 2к10 урона огнём при провале, или половину этого урона при успехе.

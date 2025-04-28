@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "spell-card-template.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -211,7 +211,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 400.5
+    "width": 323.5
   },
   "left-ribbon": {
     "hiddenItems": {
