@@ -179,7 +179,7 @@
   color: var(--dnd-title-color) !important;
 }
 .dnd .cm-content .cm-table-widget td {
-  font-size: 20px !important;
+  font-size: 32px !important;
   font-weight: 400 !important;
 }
 
