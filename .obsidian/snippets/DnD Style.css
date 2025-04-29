@@ -143,17 +143,20 @@
 .dnd .markdown-rendered th,
 .dnd .cm-html-embed td,
 .dnd .markdown-rendered td {
-  color: var(--dnd-title-color);
-  font-size: 32px;
-  font-family: var(--font-family);
-  font-weight: 600;
-  text-align: center;
+  font-family: var(--font-family) !important;
+  text-align: center !important;
   --table-text-align: center;
 }
-/* 
+
+.dnd .cm-html-embed th,
+.dnd .markdown-rendered th {
+  color: var(--dnd-title-color) !important;
+  font-size: 32px !important;
+  font-weight: 600 !important;
+}
+
 .dnd .cm-html-embed td,
 .dnd .markdown-rendered td {
-  font-size: 32px;
-  font-family: var(--font-family);
-  font-weight: 400;
-} */
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
