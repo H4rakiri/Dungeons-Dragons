@@ -87,3 +87,18 @@
 .dataview.table-view-table, .table-view-table {
     border-radius: 14px;
 }
+
+.dataview.table-view-table a, .table-view-table a {
+    color: #dadada;
+    text-decoration: none;
+    border-bottom: 1px solid #a084f333;
+    transition: color 0.2s, border-bottom 0.2s, text-shadow 0.2s;
+    font-weight: 500;
+}
+
+.dataview.table-view-table tbody tr:hover a,
+.table-view-table tbody tr:hover a {
+    color: #a084f3;
+    border-bottom: 2px solid #a084f3;
+    text-shadow: 0 0 8px #a084f399;
+}
