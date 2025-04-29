@@ -1,0 +1,71 @@
+/* Стилизация таблицы Dataview */
+.table-view-table, .dataview.table-view-table {
+    background: #181622;
+    border-radius: 18px;
+    border: none;
+    box-shadow: 0 4px 24px 0 #00000040;
+    color: #e0e0e0;
+    overflow: hidden;
+    font-size: 1.05em;
+}
+
+.table-view-table thead, .dataview.table-view-table thead {
+    background: #23203a;
+    color: #b39ddb;
+    font-weight: 600;
+    border-bottom: 2px solid #6c63ff;
+}
+
+.table-view-table th, .dataview.table-view-table th {
+    padding: 16px 18px;
+    border: none;
+    text-align: left;
+    letter-spacing: 0.5px;
+    font-size: 1.1em;
+}
+
+.table-view-table tbody tr, .dataview.table-view-table tbody tr {
+    transition: background 0.2s;
+}
+
+.table-view-table tbody tr:hover, .dataview.table-view-table tbody tr:hover {
+    background: #28243a;
+}
+
+.table-view-table td, .dataview.table-view-table td {
+    padding: 14px 18px;
+    border: none;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+.table-view-table td:first-child, .dataview.table-view-table td:first-child {
+    color: #b39ddb;
+    font-weight: 600;
+}
+
+.table-view-table a, .dataview.table-view-table a {
+    color: #a084f3;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.table-view-table a:hover, .dataview.table-view-table a:hover {
+    color: #fff;
+    text-shadow: 0 0 4px #a084f3;
+}
+
+.table-view-table th, .table-view-table td,
+.dataview.table-view-table th, .dataview.table-view-table td {
+    border-bottom: 1px solid #23203a;
+}
+
+.table-view-table tr:last-child td, .dataview.table-view-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Скругления только у внешних углов */
+.table-view-table, .dataview.table-view-table {
+    border-radius: 18px;
+    overflow: hidden;
+}
