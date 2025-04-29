@@ -139,24 +139,53 @@
   font-family: var(--font-family);
 }
 
+/* Унификация таблиц для режима просмотра и редактирования */
 .dnd .cm-html-embed th,
 .dnd .markdown-rendered th,
 .dnd .cm-html-embed td,
-.dnd .markdown-rendered td {
+.dnd .markdown-rendered td,
+.dnd .cm-content .cm-html-embed th,
+.dnd .cm-content .cm-html-embed td {
   font-family: var(--font-family) !important;
   text-align: center !important;
   --table-text-align: center;
 }
 
 .dnd .cm-html-embed th,
-.dnd .markdown-rendered th {
+.dnd .markdown-rendered th,
+.dnd .cm-content .cm-html-embed th {
   color: var(--dnd-title-color) !important;
   font-size: 32px !important;
   font-weight: 600 !important;
 }
 
 .dnd .cm-html-embed td,
-.dnd .markdown-rendered td {
+.dnd .markdown-rendered td,
+.dnd .cm-content .cm-html-embed td {
+  font-size: 32px !important;
+  font-weight: 400 !important;
+}
+
+/* Таблицы в редакторе (CodeMirror) */
+.dnd .cm-content .cm-table-widget th,
+.dnd .cm-content .cm-table-widget td,
+.dnd .cm-content .cm-table-widget {
+  font-family: var(--font-family) !important;
+  font-size: inherit !important;
+}
+.dnd .cm-content .cm-table-widget th {
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  color: var(--dnd-title-color) !important;
+}
+.dnd .cm-content .cm-table-widget td {
   font-size: 20px !important;
   font-weight: 400 !important;
+}
+
+/* Frontmatter */
+.dnd .cm-frontmatter,
+.dnd .cm-frontmatter * {
+  font-family: var(--font-family) !important;
+  font-size: 20px !important;
 }
