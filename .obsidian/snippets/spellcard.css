@@ -112,6 +112,8 @@
     color: var(--text-primary);
     font-weight: 400;
     word-wrap: break-word;
+    max-height: 120px;
+    overflow: scroll;
 }
 
 .spell-meta {
