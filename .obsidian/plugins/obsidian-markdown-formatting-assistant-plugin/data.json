@@ -2,7 +2,8 @@
   "triggerChar": "\\",
   "sidePaneSideLeft": false,
   "savedColors": [
-    "#ff0000"
+    "#ff0000",
+    "#fa0000"
   ],
   "aviabileRegions": [
     "textEdit",
