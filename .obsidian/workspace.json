@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "двойник.md",
-                "mode": "preview",
+                "file": "Аура жизни.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "двойник"
+              "title": "Аура жизни"
             }
           }
         ]
@@ -229,12 +229,12 @@
   },
   "active": "e084fa83964a72c9",
   "lastOpenFiles": [
-    "горящий-клинок.md",
-    "дружба-с-животными.md",
-    "spell-card-template.md",
     "двойник.md",
-    "водяная-сфера.md",
+    "дружба-с-животными.md",
     "безмолвный-образ.md",
+    "водяная-сфера.md",
+    "горящий-клинок.md",
+    "spell-card-template.md",
     "адское-возмездие.md",
     "Адское возмездте.md",
     "Квесты и сюжеты/Сюжеты/Пиздатый сюжет.md",
