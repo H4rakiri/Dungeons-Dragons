@@ -170,8 +170,8 @@
             "state": {
               "type": "DICE_ROLLER_VIEW",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Плагин больше не активен"
+              "icon": "dices",
+              "title": "Dice Tray"
             }
           },
           {
@@ -190,8 +190,8 @@
             "state": {
               "type": "DICE_ROLLER_VIEW",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Плагин больше не активен"
+              "icon": "dices",
+              "title": "Dice Tray"
             }
           },
           {
@@ -203,9 +203,19 @@
               "icon": "dices",
               "title": "Dice Tray"
             }
+          },
+          {
+            "id": "8918d991b39349d6",
+            "type": "leaf",
+            "state": {
+              "type": "exp-calculator-view",
+              "state": {},
+              "icon": "dice",
+              "title": "Experience Calculator"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       },
       {
         "id": "ae0fd52d4ef4e0d6",
@@ -226,8 +236,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5,
-    "collapsed": true
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,10 +250,11 @@
       "omnisearch:Omnisearch": false,
       "loot-generator:Генератор добычи": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-leaflet-plugin:Open Leaflet Map": false
+      "obsidian-leaflet-plugin:Open Leaflet Map": false,
+      "exp-calculator:Experience Calculator": false
     }
   },
-  "active": "e8f3ddc5f73df85c",
+  "active": "c74db7fc33b9b9f9",
   "lastOpenFiles": [
     "Интерактивные карты/Карта 1.md",
     "Интерактивные карты/Leaflet Инструкция.md",
