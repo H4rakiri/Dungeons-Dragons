@@ -4,9 +4,9 @@
   "enabledCssSnippets": [
     "preview-default",
     "dnd-obsidian",
-    "spellcard",
+    "DnD Style",
     "beautiful-dataview",
-    "DnD Style"
+    "spellcard"
   ],
   "accentColor": ""
 }
