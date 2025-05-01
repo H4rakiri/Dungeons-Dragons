@@ -90,10 +90,26 @@
             }
           }
         ]
+      },
+      {
+        "id": "68d0aba35f0d2d7f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc5e7b3358898ca0",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {},
+              "icon": "viewIcon",
+              "title": "Markdown-Autocomplete"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 209.5
+    "width": 328.5
   },
   "right": {
     "id": "c4de976d07796e3f",
@@ -102,68 +118,7 @@
       {
         "id": "9b142abffb6c56c1",
         "type": "tabs",
-        "dimension": 38.70220162224797,
         "children": [
-          {
-            "id": "e22bcc758f677851",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Обратные ссылки"
-            }
-          },
-          {
-            "id": "ebb3ee6009695eab",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Исходящие ссылки"
-            }
-          },
-          {
-            "id": "e66bd825fc8d6f2c",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Теги"
-            }
-          },
-          {
-            "id": "586cd5bd836b01ce",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Структура"
-            }
-          },
           {
             "id": "3b05ae00c210fb46",
             "type": "leaf",
@@ -193,26 +148,72 @@
               "icon": "dice",
               "title": "Experience Calculator"
             }
-          }
-        ],
-        "currentTab": 6
-      },
-      {
-        "id": "ae0fd52d4ef4e0d6",
-        "type": "tabs",
-        "dimension": 61.29779837775203,
-        "children": [
+          },
           {
-            "id": "bc5e7b3358898ca0",
+            "id": "39adc476c2554ba6",
             "type": "leaf",
             "state": {
-              "type": "side-panel-control-view",
-              "state": {},
-              "icon": "viewIcon",
-              "title": "Markdown-Autocomplete"
+              "type": "backlink",
+              "state": {
+                "file": "Интерактивные карты/Leaflet Инструкция.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Leaflet Инструкция"
+            }
+          },
+          {
+            "id": "19cc12af13f7bf73",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Интерактивные карты/Leaflet Инструкция.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Leaflet Инструкция"
+            }
+          },
+          {
+            "id": "c9480ec78972ecb3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "1db2ae92a4f43027",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Интерактивные карты/Leaflet Инструкция.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура Leaflet Инструкция"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",

@@ -136,23 +136,23 @@ var ExpCalculatorView = class extends import_obsidian.ItemView {
   }
   render() {
     const container = this.containerEl;
-    container.createEl("h2", { text: "Experience Calculator" });
-    container.createEl("label", { text: "Challenge Rating: " });
+    container.createEl("h2", { text: "\u041A\u0430\u043B\u044C\u043A\u0443\u043B\u044F\u0442\u043E\u0440 \u043E\u043F\u044B\u0442\u0430" });
+    container.createEl("label", { text: "\u041A\u043B\u0430\u0441\u0441 \u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u0438: " });
     this.challengeRatingSelect = container.createEl("select");
     Object.keys(CR_TO_XP).forEach((cr) => {
       const option = this.challengeRatingSelect.createEl("option");
       option.value = cr;
       option.text = cr;
     });
-    container.createEl("label", { text: "Number of Enemies: " });
+    container.createEl("label", { text: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0432\u0440\u0430\u0433\u043E\u0432: " });
     this.enemyCountInput = container.createEl("input", { type: "number" });
     this.enemyCountInput.setAttribute("min", "1");
     this.enemyCountInput.value = "1";
-    container.createEl("label", { text: "Number of Players: " });
+    container.createEl("label", { text: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0438\u0433\u0440\u043E\u043A\u043E\u0432: " });
     this.playerCountInput = container.createEl("input", { type: "number" });
     this.playerCountInput.setAttribute("min", "1");
     this.playerCountInput.value = "1";
-    const calculateButton = container.createEl("button", { text: "Calculate" });
+    const calculateButton = container.createEl("button", { text: "\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0442\u044C" });
     calculateButton.addEventListener("click", () => this.calculate());
     this.resultDisplay = container.createEl("div", { cls: "result-display" });
     container.createEl("h3", { text: "Recent Calculations" });
