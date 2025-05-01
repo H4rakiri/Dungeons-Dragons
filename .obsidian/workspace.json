@@ -102,7 +102,7 @@
       {
         "id": "9b142abffb6c56c1",
         "type": "tabs",
-        "dimension": 41.22621564482031,
+        "dimension": 38.70220162224797,
         "children": [
           {
             "id": "e22bcc758f677851",
@@ -185,26 +185,6 @@
             }
           },
           {
-            "id": "665496b4c0e76a08",
-            "type": "leaf",
-            "state": {
-              "type": "DICE_ROLLER_VIEW",
-              "state": {},
-              "icon": "dices",
-              "title": "Dice Tray"
-            }
-          },
-          {
-            "id": "c74db7fc33b9b9f9",
-            "type": "leaf",
-            "state": {
-              "type": "DICE_ROLLER_VIEW",
-              "state": {},
-              "icon": "dices",
-              "title": "Dice Tray"
-            }
-          },
-          {
             "id": "8918d991b39349d6",
             "type": "leaf",
             "state": {
@@ -215,12 +195,12 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       },
       {
         "id": "ae0fd52d4ef4e0d6",
         "type": "tabs",
-        "dimension": 58.77378435517969,
+        "dimension": 61.29779837775203,
         "children": [
           {
             "id": "bc5e7b3358898ca0",
@@ -236,7 +216,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 333.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,7 +234,7 @@
       "exp-calculator:Experience Calculator": false
     }
   },
-  "active": "c74db7fc33b9b9f9",
+  "active": "8918d991b39349d6",
   "lastOpenFiles": [
     "Интерактивные карты/Карта 1.md",
     "Интерактивные карты/Leaflet Инструкция.md",

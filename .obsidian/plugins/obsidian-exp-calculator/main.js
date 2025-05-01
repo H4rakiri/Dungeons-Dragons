@@ -66,6 +66,7 @@ var CR_TO_XP = {
   "29": 135e3,
   "30": 155e3
 };
+var VIEW_TYPE_CALCULATOR = "exp-calculator-view";
 var ExpCalculatorPlugin = class extends import_obsidian.Plugin {
   async onload() {
     await this.loadSettings();
@@ -80,7 +81,7 @@ var ExpCalculatorPlugin = class extends import_obsidian.Plugin {
       }
     });
     this.registerView(
-      "exp-calculator-view",
+      VIEW_TYPE_CALCULATOR,
       (leaf) => new ExpCalculatorView(leaf, this)
     );
   }
@@ -92,28 +93,34 @@ var ExpCalculatorPlugin = class extends import_obsidian.Plugin {
   }
   async activateView() {
     const { workspace } = this.app;
-    let leaf = workspace.getRightLeaf(false);
-    if (!leaf) {
-      leaf = workspace.getLeaf("split", "vertical");
+    let leaf = null;
+    const leaves = workspace.getLeavesOfType(VIEW_TYPE_CALCULATOR);
+    if (leaves.length > 0) {
+      leaf = leaves[0];
+    } else {
+      leaf = workspace.getRightLeaf(false);
+      if (leaf) {
+        await leaf.setViewState({
+          type: VIEW_TYPE_CALCULATOR,
+          active: true
+        });
+      }
     }
-    await leaf.setViewState({
-      type: "exp-calculator-view",
-      active: true
-    });
-    workspace.revealLeaf(leaf);
+    if (leaf) {
+      workspace.revealLeaf(leaf);
+    }
+  }
+  async onunload() {
+    this.app.workspace.detachLeavesOfType(VIEW_TYPE_CALCULATOR);
   }
 };
-var ExpCalculatorView = class extends import_obsidian.View {
+var ExpCalculatorView = class extends import_obsidian.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
     this.plugin = plugin;
-    this.container = leaf.containerEl;
-    this.container.empty();
-    this.container.addClass("exp-calculator-container");
-    this.render();
   }
   getViewType() {
-    return "exp-calculator-view";
+    return VIEW_TYPE_CALCULATOR;
   }
   getDisplayText() {
     return "Experience Calculator";
@@ -121,28 +128,35 @@ var ExpCalculatorView = class extends import_obsidian.View {
   getIcon() {
     return "dice";
   }
+  async onOpen() {
+    const { containerEl } = this;
+    containerEl.empty();
+    containerEl.addClass("exp-calculator-container");
+    this.render();
+  }
   render() {
-    this.container.createEl("h2", { text: "Experience Calculator" });
-    this.container.createEl("label", { text: "Challenge Rating: " });
-    this.challengeRatingSelect = this.container.createEl("select");
+    const container = this.containerEl;
+    container.createEl("h2", { text: "Experience Calculator" });
+    container.createEl("label", { text: "Challenge Rating: " });
+    this.challengeRatingSelect = container.createEl("select");
     Object.keys(CR_TO_XP).forEach((cr) => {
       const option = this.challengeRatingSelect.createEl("option");
       option.value = cr;
       option.text = cr;
     });
-    this.container.createEl("label", { text: "Number of Enemies: " });
-    this.enemyCountInput = this.container.createEl("input", { type: "number" });
+    container.createEl("label", { text: "Number of Enemies: " });
+    this.enemyCountInput = container.createEl("input", { type: "number" });
     this.enemyCountInput.setAttribute("min", "1");
     this.enemyCountInput.value = "1";
-    this.container.createEl("label", { text: "Number of Players: " });
-    this.playerCountInput = this.container.createEl("input", { type: "number" });
+    container.createEl("label", { text: "Number of Players: " });
+    this.playerCountInput = container.createEl("input", { type: "number" });
     this.playerCountInput.setAttribute("min", "1");
     this.playerCountInput.value = "1";
-    const calculateButton = this.container.createEl("button", { text: "Calculate" });
+    const calculateButton = container.createEl("button", { text: "Calculate" });
     calculateButton.addEventListener("click", () => this.calculate());
-    this.resultDisplay = this.container.createEl("div", { cls: "result-display" });
-    this.container.createEl("h3", { text: "Recent Calculations" });
-    this.historyContainer = this.container.createEl("div", { cls: "history-container" });
+    this.resultDisplay = container.createEl("div", { cls: "result-display" });
+    container.createEl("h3", { text: "Recent Calculations" });
+    this.historyContainer = container.createEl("div", { cls: "history-container" });
     this.updateHistory();
   }
   calculate() {
