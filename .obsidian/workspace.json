@@ -25,14 +25,10 @@
             "id": "e8f3ddc5f73df85c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Интерактивные карты/Leaflet Инструкция.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "obsidian-leaflet-map-view",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Leaflet Инструкция"
+              "title": "Leaflet Map"
             }
           }
         ],
@@ -213,7 +209,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -235,14 +231,16 @@
       "exp-calculator:Experience Calculator": false
     }
   },
-  "active": "8918d991b39349d6",
+  "active": "c351b199a5e40b4a",
   "lastOpenFiles": [
+    "Легенды и мифы",
+    "Новая папка",
+    "Таблица состояний.md",
     "Интерактивные карты/Карта 1.md",
     "Интерактивные карты/Leaflet Инструкция.md",
     "Интерактивные карты/Карты/Карта Фаэруна.jpg",
     "Бестиарий/Существа/Чёрная перчатка Бэйна.md",
     "Интерактивные карты/Карты",
-    "Таблица состояний.md",
     "Интерактивные карты",
     "Состояния/Невидимый.md",
     "Рандомайзеры d100.md",
@@ -271,7 +269,6 @@
     "view.js",
     "Text Document.txt",
     "Миры/Таверны",
-    "Предметы/Магические предметы/Предметы",
-    "NPCs/Имена"
+    "Предметы/Магические предметы/Предметы"
   ]
 }
