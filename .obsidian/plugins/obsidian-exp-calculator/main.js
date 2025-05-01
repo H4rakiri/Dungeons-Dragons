@@ -155,7 +155,7 @@ var ExpCalculatorView = class extends import_obsidian.ItemView {
     const calculateButton = container.createEl("button", { text: "\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0442\u044C" });
     calculateButton.addEventListener("click", () => this.calculate());
     this.resultDisplay = container.createEl("div", { cls: "result-display" });
-    container.createEl("h3", { text: "Recent Calculations" });
+    container.createEl("h3", { text: "\u0418\u0441\u0442\u043E\u0440\u0438\u044F \u0440\u0430\u0441\u0447\u0435\u0442\u043E\u0432" });
     this.historyContainer = container.createEl("div", { cls: "history-container" });
     this.updateHistory();
   }
@@ -169,7 +169,7 @@ var ExpCalculatorView = class extends import_obsidian.ItemView {
     }
     const baseXP = CR_TO_XP[cr];
     const totalXP = baseXP * enemyCount / playerCount;
-    this.resultDisplay.textContent = `Each player receives: ${Math.round(totalXP)} XP`;
+    this.resultDisplay.textContent = `\u041A\u0430\u0436\u0434\u044B\u0439 \u0438\u0433\u0440\u043E\u043A \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u0442: ${Math.round(totalXP)} XP`;
     this.plugin.settings.lastCalculations.unshift({
       challengeRating: cr,
       enemyCount,
@@ -187,7 +187,7 @@ var ExpCalculatorView = class extends import_obsidian.ItemView {
     this.historyContainer.empty();
     this.plugin.settings.lastCalculations.forEach((calc) => {
       const historyItem = this.historyContainer.createEl("div", { cls: "history-item" });
-      historyItem.textContent = `CR ${calc.challengeRating} \xD7 ${calc.enemyCount} enemies / ${calc.playerCount} players = ${calc.result} XP`;
+      historyItem.textContent = `CR ${calc.challengeRating} \xD7 ${calc.enemyCount} \u0432\u0440\u0430\u0433\u043E\u0432 / ${calc.playerCount} \u0438\u0433\u0440\u043E\u043A\u043E\u0432 = ${calc.result} XP`;
     });
   }
 };
