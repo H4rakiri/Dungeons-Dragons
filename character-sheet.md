@@ -1,388 +1,508 @@
+---
+cssclasses:
+  - character-sheet
+---
+
 # Лист персонажа D&D 5e
 
-```dataviewjs
-// Константы для расчетов
-const PROFICIENCY_BONUS = Math.floor((dv.current().level - 1) / 4) + 2;
+<div class="character-sheet">
+  <div class="section header">
+    <h2>Основная информация</h2>
+    <div class="grid-2">
+      <div class="field">
+        <label>Имя персонажа:</label>
+        <input type="text" name="name" />
+      </div>
+      <div class="field">
+        <label>Класс и уровень:</label>
+        <input type="text" name="class" />
+        <input type="number" name="level" min="1" max="20" />
+      </div>
+      <div class="field">
+        <label>Предыстория:</label>
+        <input type="text" name="background" />
+      </div>
+      <div class="field">
+        <label>Имя игрока:</label>
+        <input type="text" name="playerName" />
+      </div>
+      <div class="field">
+        <label>Раса:</label>
+        <input type="text" name="race" />
+      </div>
+      <div class="field">
+        <label>Мировоззрение:</label>
+        <input type="text" name="alignment" />
+      </div>
+      <div class="field">
+        <label>Очки опыта:</label>
+        <input type="number" name="experience" />
+      </div>
+    </div>
+  </div>
+  <div class="section abilities">
+    <h2>Характеристики</h2>
+    <div class="grid-6">
+      <div class="ability">
+        <div class="ability-name">Сила</div>
+        <input type="number" name="strength" min="1" max="30" />
+        <div class="modifier">+0</div>
+      </div>
+      <div class="ability">
+        <div class="ability-name">Ловкость</div>
+        <input type="number" name="dexterity" min="1" max="30" />
+        <div class="modifier">+0</div>
+      </div>
+      <div class="ability">
+        <div class="ability-name">Телосложение</div>
+        <input type="number" name="constitution" min="1" max="30" />
+        <div class="modifier">+0</div>
+      </div>
+      <div class="ability">
+        <div class="ability-name">Интеллект</div>
+        <input type="number" name="intelligence" min="1" max="30" />
+        <div class="modifier">+0</div>
+      </div>
+      <div class="ability">
+        <div class="ability-name">Мудрость</div>
+        <input type="number" name="wisdom" min="1" max="30" />
+        <div class="modifier">+0</div>
+      </div>
+      <div class="ability">
+        <div class="ability-name">Харизма</div>
+        <input type="number" name="charisma" min="1" max="30" />
+        <div class="modifier">+0</div>
+      </div>
+    </div>
+  </div>
+  <div class="section proficiency">
+    <h2>Бонус мастерства</h2>
+    <div class="proficiency-bonus">+2</div>
+  </div>
+  <div class="section saving-throws">
+    <h2>Спасброски</h2>
+    <div class="grid-3">
+      <div class="saving-throw">
+        <input type="checkbox" name="strengthSaveProficient" />
+        <label>Сила</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="saving-throw">
+        <input type="checkbox" name="dexteritySaveProficient" />
+        <label>Ловкость</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="saving-throw">
+        <input type="checkbox" name="constitutionSaveProficient" />
+        <label>Телосложение</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="saving-throw">
+        <input type="checkbox" name="intelligenceSaveProficient" />
+        <label>Интеллект</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="saving-throw">
+        <input type="checkbox" name="wisdomSaveProficient" />
+        <label>Мудрость</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="saving-throw">
+        <input type="checkbox" name="charismaSaveProficient" />
+        <label>Харизма</label>
+        <div class="modifier">+0</div>
+      </div>
+    </div>
+  </div>
+  <div class="section skills">
+    <h2>Навыки</h2>
+    <div class="grid-3">
+      <div class="skill">
+        <input type="checkbox" name="acrobaticsProficient" />
+        <input type="checkbox" name="acrobaticsExpert" />
+        <label>Акробатика (Лов)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="animalHandlingProficient" />
+        <input type="checkbox" name="animalHandlingExpert" />
+        <label>Уход за животными (Муд)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="arcanaProficient" />
+        <input type="checkbox" name="arcanaExpert" />
+        <label>Магия (Инт)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="athleticsProficient" />
+        <input type="checkbox" name="athleticsExpert" />
+        <label>Атлетика (Сил)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="deceptionProficient" />
+        <input type="checkbox" name="deceptionExpert" />
+        <label>Обман (Хар)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="historyProficient" />
+        <input type="checkbox" name="historyExpert" />
+        <label>История (Инт)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="insightProficient" />
+        <input type="checkbox" name="insightExpert" />
+        <label>Проницательность (Муд)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="intimidationProficient" />
+        <input type="checkbox" name="intimidationExpert" />
+        <label>Запугивание (Хар)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="investigationProficient" />
+        <input type="checkbox" name="investigationExpert" />
+        <label>Расследование (Инт)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="medicineProficient" />
+        <input type="checkbox" name="medicineExpert" />
+        <label>Медицина (Муд)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="natureProficient" />
+        <input type="checkbox" name="natureExpert" />
+        <label>Природа (Инт)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="perceptionProficient" />
+        <input type="checkbox" name="perceptionExpert" />
+        <label>Восприятие (Муд)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="performanceProficient" />
+        <input type="checkbox" name="performanceExpert" />
+        <label>Выступление (Хар)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="persuasionProficient" />
+        <input type="checkbox" name="persuasionExpert" />
+        <label>Убеждение (Хар)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="religionProficient" />
+        <input type="checkbox" name="religionExpert" />
+        <label>Религия (Инт)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="sleightOfHandProficient" />
+        <input type="checkbox" name="sleightOfHandExpert" />
+        <label>Ловкость рук (Лов)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="stealthProficient" />
+        <input type="checkbox" name="stealthExpert" />
+        <label>Скрытность (Лов)</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="skill">
+        <input type="checkbox" name="survivalProficient" />
+        <input type="checkbox" name="survivalExpert" />
+        <label>Выживание (Муд)</label>
+        <div class="modifier">+0</div>
+      </div>
+    </div>
+  </div>
 
-// Функция для расчета модификатора характеристики
-function calculateModifier(score) {
-    return Math.floor((score - 10) / 2);
-}
+  <!-- Боевые характеристики -->
+  <div class="section combat-stats">
+    <h2>Боевые характеристики</h2>
+    <div class="grid-3">
+      <div class="combat-stat">
+        <label>Класс доспеха:</label>
+        <input type="number" name="armorClass" min="0" />
+      </div>
+      <div class="combat-stat">
+        <label>Инициатива:</label>
+        <div class="modifier">+0</div>
+      </div>
+      <div class="combat-stat">
+        <label>Скорость:</label>
+        <input type="number" name="speed" min="0" />
+      </div>
+    </div>
+    <div class="hit-points">
+      <h3>Хиты</h3>
+      <div class="grid-3">
+        <div class="hp-stat">
+          <label>Максимум:</label>
+          <input type="number" name="maxHp" min="0" />
+        </div>
+        <div class="hp-stat">
+          <label>Текущие:</label>
+          <input type="number" name="currentHp" min="0" />
+        </div>
+        <div class="hp-stat">
+          <label>Временные:</label>
+          <input type="number" name="tempHp" min="0" />
+        </div>
+      </div>
+    </div>
+    <div class="hit-dice">
+      <label>Кости хитов:</label>
+      <input type="text" name="hitDice" />
+    </div>
+    <div class="death-saves">
+      <h3>Спасброски от смерти</h3>
+      <div class="grid-2">
+        <div class="death-save">
+          <label>Успехи:</label>
+          <div class="boxes">
+            <input type="checkbox" name="deathSaveSuccess0" />
+            <input type="checkbox" name="deathSaveSuccess1" />
+            <input type="checkbox" name="deathSaveSuccess2" />
+          </div>
+        </div>
+        <div class="death-save">
+          <label>Провалы:</label>
+          <div class="boxes">
+            <input type="checkbox" name="deathSaveFailure0" />
+            <input type="checkbox" name="deathSaveFailure1" />
+            <input type="checkbox" name="deathSaveFailure2" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section attacks">
+    <h2>Атаки и заклинания</h2>
+    <table class="attacks-table">
+      <thead>
+        <tr>
+          <th>Название</th>
+          <th>Бонус атаки</th>
+          <th>Урон/Тип</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" name="attack0Name" /></td>
+          <td><input type="text" name="attack0Bonus" /></td>
+          <td><input type="text" name="attack0Damage" /></td>
+          <td><button class="delete-row">×</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="add-row" data-table="attacks-table">+ Добавить атаку</button>
+  </div>
+  <div class="section equipment">
+    <h2>Снаряжение</h2>
+    <table class="equipment-table">
+      <thead>
+        <tr>
+          <th>Предмет</th>
+          <th>Количество</th>
+          <th>Вес</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" name="equipment0Name" /></td>
+          <td><input type="number" name="equipment0Quantity" min="1" /></td>
+          <td>
+            <input type="number" name="equipment0Weight" min="0" step="0.1" />
+          </td>
+          <td><button class="delete-row">×</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="add-row" data-table="equipment-table">
+      + Добавить предмет
+    </button>
+  </div>
+  <div class="section features">
+    <h2>Особенности и черты</h2>
+    <table class="features-table">
+      <thead>
+        <tr>
+          <th>Название</th>
+          <th>Описание</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" name="feature0Name" /></td>
+          <td><textarea name="feature0Description"></textarea></td>
+          <td><button class="delete-row">×</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="add-row" data-table="features-table">
+      + Добавить особенность
+    </button>
+  </div>
+  <div class="section spells">
+    <h2>Заклинания</h2>
+    <div class="spellcasting-info">
+      <div class="spellcasting-stat">
+        <label>Характеристика заклинаний:</label>
+        <input type="text" name="spellcastingAbility" />
+      </div>
+      <div class="spellcasting-stat">
+        <label>Сл спасброска от заклинаний:</label>
+        <div class="value">8</div>
+      </div>
+      <div class="spellcasting-stat">
+        <label>Бонус атаки заклинаниями:</label>
+        <div class="value">+0</div>
+      </div>
+    </div>
+    <div class="spell-slots">
+      <h3>Ячейки заклинаний</h3>
+      <div class="grid-9">
+        <div class="spell-slot">
+          <label>1-й</label>
+          <input type="number" name="spellSlot1" min="0" max="4" />
+        </div>
+        <div class="spell-slot">
+          <label>2-й</label>
+          <input type="number" name="spellSlot2" min="0" max="3" />
+        </div>
+        <div class="spell-slot">
+          <label>3-й</label>
+          <input type="number" name="spellSlot3" min="0" max="3" />
+        </div>
+        <div class="spell-slot">
+          <label>4-й</label>
+          <input type="number" name="spellSlot4" min="0" max="3" />
+        </div>
+        <div class="spell-slot">
+          <label>5-й</label>
+          <input type="number" name="spellSlot5" min="0" max="3" />
+        </div>
+        <div class="spell-slot">
+          <label>6-й</label>
+          <input type="number" name="spellSlot6" min="0" max="2" />
+        </div>
+        <div class="spell-slot">
+          <label>7-й</label>
+          <input type="number" name="spellSlot7" min="0" max="2" />
+        </div>
+        <div class="spell-slot">
+          <label>8-й</label>
+          <input type="number" name="spellSlot8" min="0" max="1" />
+        </div>
+        <div class="spell-slot">
+          <label>9-й</label>
+          <input type="number" name="spellSlot9" min="0" max="1" />
+        </div>
+      </div>
+    </div>
+    <div class="spells-known">
+      <h3>Известные заклинания</h3>
+      <table class="spells-table">
+        <thead>
+          <tr>
+            <th>Название</th>
+            <th>Уровень</th>
+            <th>Время накладывания</th>
+            <th>Дистанция</th>
+            <th>Компоненты</th>
+            <th>Длительность</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="spell0Name" /></td>
+            <td><input type="number" name="spell0Level" min="0" max="9" /></td>
+            <td><input type="text" name="spell0CastingTime" /></td>
+            <td><input type="text" name="spell0Range" /></td>
+            <td><input type="text" name="spell0Components" /></td>
+            <td><input type="text" name="spell0Duration" /></td>
+            <td><button class="delete-row">×</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="add-row" data-table="spells-table">
+        + Добавить заклинание
+      </button>
+    </div>
+  </div>
+</div>
 
-// Функция для расчета модификатора навыка
-function calculateSkillModifier(abilityModifier, isProficient, isExpert) {
-    let modifier = abilityModifier;
-    if (isProficient) modifier += PROFICIENCY_BONUS;
-    if (isExpert) modifier += PROFICIENCY_BONUS;
-    return modifier;
-}
-
-// Функция для форматирования модификатора
-function formatModifier(modifier) {
-    return modifier >= 0 ? `+${modifier}` : modifier;
-}
-
-// Получаем текущие данные персонажа
-const character = dv.current();
-
-// Создаем HTML структуру листа
-const sheet = dv.el('div', '', { cls: 'character-sheet' });
-
-// Секция основной информации
-const header = dv.el('div', '', { cls: 'header' });
-header.appendChild(dv.el('div', '', { cls: 'character-info' }, [
-    dv.el('div', `Имя персонажа: ${character.name || ''}`, { cls: 'name' }),
-    dv.el('div', `Класс и уровень: ${character.class || ''} ${character.level || 1}`, { cls: 'class-level' }),
-    dv.el('div', `Предыстория: ${character.background || ''}`, { cls: 'background' }),
-    dv.el('div', `Имя игрока: ${character.playerName || ''}`, { cls: 'player-name' }),
-    dv.el('div', `Раса: ${character.race || ''}`, { cls: 'race' }),
-    dv.el('div', `Мировоззрение: ${character.alignment || ''}`, { cls: 'alignment' }),
-    dv.el('div', `Очки опыта: ${character.experience || 0}`, { cls: 'experience' })
-]));
-sheet.appendChild(header);
-
-// Секция характеристик
-const mainStats = dv.el('div', '', { cls: 'main-stats' });
-
-// Блок характеристик
-const abilityScores = dv.el('div', '', { cls: 'ability-scores' });
-['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'].forEach(ability => {
-    const score = character[ability] || 10;
-    const modifier = calculateModifier(score);
-    abilityScores.appendChild(dv.el('div', '', { cls: 'ability-score' }, [
-        dv.el('div', ability.charAt(0).toUpperCase() + ability.slice(1), { cls: 'score-name' }),
-        dv.el('div', score.toString(), { cls: 'score-value' }),
-        dv.el('div', formatModifier(modifier), { cls: 'modifier' })
-    ]));
-});
-mainStats.appendChild(abilityScores);
-
-// Бонус мастерства
-mainStats.appendChild(dv.el('div', '', { cls: 'proficiency-bonus' }, [
-    dv.el('div', `+${PROFICIENCY_BONUS}`, { cls: 'proficiency-value' }),
-    dv.el('div', 'Бонус мастерства', { cls: 'proficiency-label' })
-]));
-
-// Спасброски
-const savingThrows = dv.el('div', '', { cls: 'saving-throws' });
-savingThrows.appendChild(dv.el('h3', 'Спасброски'));
-['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'].forEach(ability => {
-    const isProficient = character[`${ability}SaveProficient`] || false;
-    const modifier = calculateModifier(character[ability] || 10);
-    const totalModifier = isProficient ? modifier + PROFICIENCY_BONUS : modifier;
-    savingThrows.appendChild(dv.el('div', '', { cls: 'saving-throw' }, [
-        dv.el('div', isProficient ? '✓' : '', { cls: 'proficiency-marker' }),
-        dv.el('div', ability.charAt(0).toUpperCase() + ability.slice(1), { cls: 'throw-name' }),
-        dv.el('div', formatModifier(totalModifier), { cls: 'modifier' })
-    ]));
-});
-mainStats.appendChild(savingThrows);
-
-// Навыки
-const skills = dv.el('div', '', { cls: 'skills' });
-skills.appendChild(dv.el('h3', 'Навыки'));
-
-const skillList = [
-    { name: 'Акробатика', ability: 'dexterity', key: 'acrobatics' },
-    { name: 'Уход за животными', ability: 'wisdom', key: 'animalHandling' },
-    { name: 'Магия', ability: 'intelligence', key: 'arcana' },
-    { name: 'Атлетика', ability: 'strength', key: 'athletics' },
-    { name: 'Обман', ability: 'charisma', key: 'deception' },
-    { name: 'История', ability: 'intelligence', key: 'history' },
-    { name: 'Проницательность', ability: 'wisdom', key: 'insight' },
-    { name: 'Запугивание', ability: 'charisma', key: 'intimidation' },
-    { name: 'Расследование', ability: 'intelligence', key: 'investigation' },
-    { name: 'Медицина', ability: 'wisdom', key: 'medicine' },
-    { name: 'Природа', ability: 'intelligence', key: 'nature' },
-    { name: 'Восприятие', ability: 'wisdom', key: 'perception' },
-    { name: 'Выступление', ability: 'charisma', key: 'performance' },
-    { name: 'Убеждение', ability: 'charisma', key: 'persuasion' },
-    { name: 'Религия', ability: 'intelligence', key: 'religion' },
-    { name: 'Ловкость рук', ability: 'dexterity', key: 'sleightOfHand' },
-    { name: 'Скрытность', ability: 'dexterity', key: 'stealth' },
-    { name: 'Выживание', ability: 'wisdom', key: 'survival' }
-];
-
-skillList.forEach(skill => {
-    const isProficient = character[`${skill.key}Proficient`] || false;
-    const isExpert = character[`${skill.key}Expert`] || false;
-    const abilityModifier = calculateModifier(character[skill.ability] || 10);
-    const totalModifier = calculateSkillModifier(abilityModifier, isProficient, isExpert);
-
-    skills.appendChild(dv.el('div', '', { cls: 'skill' }, [
-        dv.el('div', isExpert ? '✓✓' : isProficient ? '✓' : '', { cls: 'proficiency-marker' }),
-        dv.el('div', `${skill.name} (${skill.ability.charAt(0).toUpperCase()})`, { cls: 'skill-name' }),
-        dv.el('div', formatModifier(totalModifier), { cls: 'modifier' })
-    ]));
-});
-mainStats.appendChild(skills);
-
-sheet.appendChild(mainStats);
-
-// Секция боевых характеристик
-const combatStats = dv.el('div', '', { cls: 'combat-stats' });
-
-// Класс доспеха
-combatStats.appendChild(dv.el('div', '', { cls: 'armor-class' }, [
-    dv.el('h3', 'Класс доспеха'),
-    dv.el('div', character.armorClass || '10', { cls: 'value' })
-]));
-
-// Инициатива
-combatStats.appendChild(dv.el('div', '', { cls: 'initiative' }, [
-    dv.el('h3', 'Инициатива'),
-    dv.el('div', formatModifier(calculateModifier(character.dexterity || 10)), { cls: 'value' })
-]));
-
-// Скорость
-combatStats.appendChild(dv.el('div', '', { cls: 'speed' }, [
-    dv.el('h3', 'Скорость'),
-    dv.el('div', character.speed || '30', { cls: 'value' })
-]));
-
-// Хиты
-const hitPoints = dv.el('div', '', { cls: 'hit-points' });
-hitPoints.appendChild(dv.el('h3', 'Хиты'));
-hitPoints.appendChild(dv.el('div', '', { cls: 'max-hp' }, [
-    dv.el('div', 'Максимум', { cls: 'label' }),
-    dv.el('div', character.maxHp || '0', { cls: 'value' })
-]));
-hitPoints.appendChild(dv.el('div', '', { cls: 'current-hp' }, [
-    dv.el('div', 'Текущие', { cls: 'label' }),
-    dv.el('div', character.currentHp || '0', { cls: 'value' })
-]));
-hitPoints.appendChild(dv.el('div', '', { cls: 'temp-hp' }, [
-    dv.el('div', 'Временные', { cls: 'label' }),
-    dv.el('div', character.tempHp || '0', { cls: 'value' })
-]));
-combatStats.appendChild(hitPoints);
-
-// Кости хитов
-combatStats.appendChild(dv.el('div', '', { cls: 'hit-dice' }, [
-    dv.el('h3', 'Кости хитов'),
-    dv.el('div', character.hitDice || '1d8', { cls: 'value' })
-]));
-
-// Спасброски от смерти
-const deathSaves = dv.el('div', '', { cls: 'death-saves' });
-deathSaves.appendChild(dv.el('h3', 'Спасброски от смерти'));
-
-const successes = dv.el('div', '', { cls: 'successes' });
-successes.appendChild(dv.el('div', 'Успехи', { cls: 'label' }));
-const successBoxes = dv.el('div', '', { cls: 'boxes' });
-for (let i = 0; i < 3; i++) {
-    successBoxes.appendChild(dv.el('div', character[`deathSaveSuccess${i}`] ? '✓' : '', { cls: 'box' }));
-}
-successes.appendChild(successBoxes);
-deathSaves.appendChild(successes);
-
-const failures = dv.el('div', '', { cls: 'failures' });
-failures.appendChild(dv.el('div', 'Провалы', { cls: 'label' }));
-const failureBoxes = dv.el('div', '', { cls: 'boxes' });
-for (let i = 0; i < 3; i++) {
-    failureBoxes.appendChild(dv.el('div', character[`deathSaveFailure${i}`] ? '✗' : '', { cls: 'box' }));
-}
-failures.appendChild(failureBoxes);
-deathSaves.appendChild(failures);
-
-combatStats.appendChild(deathSaves);
-sheet.appendChild(combatStats);
-
-// Секция атак и заклинаний
-const attacks = dv.el('div', '', { cls: 'attacks' });
-attacks.appendChild(dv.el('h3', 'Атаки и заклинания'));
-
-const attackTable = dv.el('table', '');
-const thead = dv.el('thead', '');
-thead.appendChild(dv.el('tr', '', {}, [
-    dv.el('th', 'Название'),
-    dv.el('th', 'Бонус атаки'),
-    dv.el('th', 'Урон/Тип')
-]));
-attackTable.appendChild(thead);
-
-const tbody = dv.el('tbody', '');
-for (let i = 0; i < 3; i++) {
-    tbody.appendChild(dv.el('tr', '', {}, [
-        dv.el('td', character[`attack${i}Name`] || ''),
-        dv.el('td', character[`attack${i}Bonus`] || '+0'),
-        dv.el('td', character[`attack${i}Damage`] || '1d6+0')
-    ]));
-}
-attackTable.appendChild(tbody);
-attacks.appendChild(attackTable);
-sheet.appendChild(attacks);
-
-// Секция снаряжения
-const equipment = dv.el('div', '', { cls: 'equipment' });
-equipment.appendChild(dv.el('h3', 'Снаряжение'));
-equipment.appendChild(dv.el('div', character.equipment || '', { cls: 'value' }));
-sheet.appendChild(equipment);
-
-// Секция особенностей и черт
-const features = dv.el('div', '', { cls: 'features' });
-features.appendChild(dv.el('h3', 'Особенности и черты'));
-features.appendChild(dv.el('div', character.features || '', { cls: 'value' }));
-sheet.appendChild(features);
-
-// Секция заклинаний
-const spells = dv.el('div', '', { cls: 'spells' });
-spells.appendChild(dv.el('h3', 'Заклинания'));
-
-// Характеристика заклинаний
-spells.appendChild(dv.el('div', '', { cls: 'spellcasting-ability' }, [
-    dv.el('div', 'Характеристика заклинаний:', { cls: 'label' }),
-    dv.el('div', character.spellcastingAbility || '', { cls: 'value' })
-]));
-
-// Сл спасброска от заклинаний
-const spellSaveDC = 8 + PROFICIENCY_BONUS + calculateModifier(character[character.spellcastingAbility] || 10);
-spells.appendChild(dv.el('div', '', { cls: 'spell-save-dc' }, [
-    dv.el('div', 'Сл спасброска от заклинаний:', { cls: 'label' }),
-    dv.el('div', spellSaveDC.toString(), { cls: 'value' })
-]));
-
-// Бонус атаки заклинаниями
-const spellAttackBonus = PROFICIENCY_BONUS + calculateModifier(character[character.spellcastingAbility] || 10);
-spells.appendChild(dv.el('div', '', { cls: 'spell-attack-bonus' }, [
-    dv.el('div', 'Бонус атаки заклинаниями:', { cls: 'label' }),
-    dv.el('div', formatModifier(spellAttackBonus), { cls: 'value' })
-]));
-
-// Ячейки заклинаний
-const spellSlots = dv.el('div', '', { cls: 'spell-slots' });
-spellSlots.appendChild(dv.el('h4', 'Ячейки заклинаний'));
-
-const slotLevels = dv.el('div', '', { cls: 'slot-levels' });
-for (let i = 1; i <= 9; i++) {
-    slotLevels.appendChild(dv.el('div', '', { cls: 'slot-level' }, [
-        dv.el('div', `${i}-й`, { cls: 'label' }),
-        dv.el('div', character[`spellSlot${i}`] || '0', { cls: 'value' })
-    ]));
-}
-spellSlots.appendChild(slotLevels);
-spells.appendChild(spellSlots);
-
-// Известные заклинания
-spells.appendChild(dv.el('div', '', { cls: 'spells-known' }, [
-    dv.el('h4', 'Известные заклинания'),
-    dv.el('div', character.spellsKnown || '', { cls: 'value' })
-]));
-
-sheet.appendChild(spells);
-
-// Добавляем лист на страницу
-dv.container.appendChild(sheet);
-```
-
-## Метаданные персонажа
-
-```yaml
-name: "Артис"
-class: "Воин"
-level: 1
-background: ""
-playerName: ""
-race: ""
-alignment: ""
-experience: 0
-
-# Характеристики
-strength: 10
-dexterity: 10
-constitution: 10
-intelligence: 10
-wisdom: 10
-charisma: 10
-
-# Спасброски
-strengthSaveProficient: false
-dexteritySaveProficient: false
-constitutionSaveProficient: false
-intelligenceSaveProficient: false
-wisdomSaveProficient: false
-charismaSaveProficient: false
-
-# Навыки
-acrobaticsProficient: false
-acrobaticsExpert: false
-animalHandlingProficient: false
-animalHandlingExpert: false
-arcanaProficient: false
-arcanaExpert: false
-athleticsProficient: false
-athleticsExpert: false
-deceptionProficient: false
-deceptionExpert: false
-historyProficient: false
-historyExpert: false
-insightProficient: false
-insightExpert: false
-intimidationProficient: false
-intimidationExpert: false
-investigationProficient: false
-investigationExpert: false
-medicineProficient: false
-medicineExpert: false
-natureProficient: false
-natureExpert: false
-perceptionProficient: false
-perceptionExpert: false
-performanceProficient: false
-performanceExpert: false
-persuasionProficient: false
-persuasionExpert: false
-religionProficient: false
-religionExpert: false
-sleightOfHandProficient: false
-sleightOfHandExpert: false
-stealthProficient: false
-stealthExpert: false
-survivalProficient: false
-survivalExpert: false
-
-# Боевые характеристики
-armorClass: 10
-speed: 30
-maxHp: 0
-currentHp: 0
-tempHp: 0
-hitDice: "1d8"
-
-# Спасброски от смерти
-deathSaveSuccess0: false
-deathSaveSuccess1: false
-deathSaveSuccess2: false
-deathSaveFailure0: false
-deathSaveFailure1: false
-deathSaveFailure2: false
-
-# Атаки
-attack0Name: ""
-attack0Bonus: "+0"
-attack0Damage: "1d6+0"
-attack1Name: ""
-attack1Bonus: "+0"
-attack1Damage: "1d6+0"
-attack2Name: ""
-attack2Bonus: "+0"
-attack2Damage: "1d6+0"
-
-# Снаряжение и особенности
-equipment: ""
-features: ""
-
-# Заклинания
-spellcastingAbility: ""
-spellSlot1: 0
-spellSlot2: 0
-spellSlot3: 0
-spellSlot4: 0
-spellSlot5: 0
-spellSlot6: 0
-spellSlot7: 0
-spellSlot8: 0
-spellSlot9: 0
-spellsKnown: ""
-</rewritten_file>
-```
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function addRow(tableId) {
+      const table = document.querySelector(`.${tableId} tbody`);
+      const newRow = table.insertRow();
+      const template = table.querySelector("tr").cloneNode(true);
+      newRow.innerHTML = template.innerHTML;
+      const inputs = newRow.querySelectorAll("input, textarea");
+      inputs.forEach((input) => {
+        const name = input.getAttribute("name");
+        const newName = name.replace(/\d+/, table.rows.length - 1);
+        input.setAttribute("name", newName);
+      });
+    }
+    document.querySelectorAll(".add-row").forEach((button) => {
+      button.addEventListener("click", function () {
+        addRow(this.dataset.table);
+      });
+    });
+    document.addEventListener("click", function (e) {
+      if (e.target.classList.contains("delete-row")) {
+        const row = e.target.closest("tr");
+        if (row.closest("tbody").rows.length > 1) {
+          row.remove();
+        }
+      }
+    });
+    function calculateModifier(score) {
+      return Math.floor((score - 10) / 2);
+    }
+    function updateModifiers() {
+      const abilities = [
+        "strength",
+        "dexterity",
+        "constitution",
+        "intelligence",
+        "wisdom",
+        "charisma",
+      ];
+      abilities.forEach((ability) => {
+        const score =
+          parseInt(document.querySelector(`input[name="${ability}"]`).value) ||
+          10;
+        const modifier = calculateModifier(score);
+        document.querySelector(
+          `.ability[data-ability="${ability}"] .modifier`
+        ).textContent = modifier >= 0 ? `+${modifier}` : modifier;
+      });
+    }
+    document
+      .querySelectorAll(
+        'input[name^="strength"], input[name^="dexterity"], input[name^="constitution"], input[name^="intelligence"], input[name^="wisdom"], input[name^="charisma"]'
+      )
+      .forEach((input) => {
+        input.addEventListener("change", updateModifiers);
+      });
+  });
+</script>
