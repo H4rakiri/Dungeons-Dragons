@@ -447,7 +447,7 @@ cssclasses:
     </div>
   </div>
 </div>
-
+```dataviewjs
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     function addRow(tableId) {
@@ -506,3 +506,4 @@ cssclasses:
       });
   });
 </script>
+```
