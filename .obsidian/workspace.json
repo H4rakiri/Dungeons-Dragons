@@ -11,14 +11,10 @@
             "id": "6bceaf87091e2412",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "character-sheet.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "character-sheet"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -216,7 +212,7 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "6bceaf87091e2412",
+  "active": "4a45a0a156021b3a",
   "lastOpenFiles": [
     "character-sheet.md",
     "Заклинания/Заклинания/Огненный шар.md",
