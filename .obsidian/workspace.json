@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Генератор домов.md",
+                "file": "Генератор домов с лутом.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Генератор домов"
+              "title": "Генератор домов с лутом"
             }
           }
         ]
@@ -196,7 +196,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 333.5
+    "width": 333.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,10 +216,11 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "c351b199a5e40b4a",
+  "active": "6bceaf87091e2412",
   "lastOpenFiles": [
-    "character-sheet.md",
     "Генератор домов.md",
+    "Генератор домов с лутом.md",
+    "character-sheet.md",
     "Заклинания/Заклинания/Огненный шар.md",
     "Легенды и мифы/Боги D&D.md",
     "Таблица состояний.md",
@@ -245,7 +247,6 @@
     "Лист персонажа/Assets/SRD_2014/Character Options/Races/Dwarf.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Races/Gnome.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Races/Half-Orc.md",
-    "Лист персонажа/Assets/SRD_2014/Character Options/Races/Elf.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Races",
     "Лист персонажа/Assets/SRD_2014/Character Options/Spells",
     "Лист персонажа/Assets/SRD_2014/Character Options/Fighting Styles",
