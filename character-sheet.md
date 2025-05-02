@@ -276,7 +276,7 @@ sheet.appendChild(spells);
 dv.container.appendChild(sheet);
 ```
 
-## Метаданные персонажа
+	## Метаданные персонажа
 
 ```yaml
 name: "Артис"
@@ -286,7 +286,7 @@ background: ""
 playerName: "Артём"
 race: ""
 alignment: ""
-experience: 0
+experience: 60
 
 # Характеристики
 strength: 10
