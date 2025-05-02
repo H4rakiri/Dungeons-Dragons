@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "02469b2608ff25df",
+        "id": "d42a71dff946d3cd",
         "type": "tabs",
         "children": [
           {
-            "id": "b467e22bcba59262",
+            "id": "6bceaf87091e2412",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -216,10 +216,10 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "b467e22bcba59262",
+  "active": "6bceaf87091e2412",
   "lastOpenFiles": [
-    "Заклинания/Заклинания/Огненный шар.md",
     "character-sheet.md",
+    "Заклинания/Заклинания/Огненный шар.md",
     "Легенды и мифы/Боги D&D.md",
     "Таблица состояний.md",
     "Лист персонажа/Character/Background & Features.md",
