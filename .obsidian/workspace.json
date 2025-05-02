@@ -11,10 +11,14 @@
             "id": "6bceaf87091e2412",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Генератор домов.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "Генератор домов"
             }
           }
         ]
@@ -212,9 +216,10 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "4a45a0a156021b3a",
+  "active": "6bceaf87091e2412",
   "lastOpenFiles": [
     "character-sheet.md",
+    "Генератор домов.md",
     "Заклинания/Заклинания/Огненный шар.md",
     "Легенды и мифы/Боги D&D.md",
     "Таблица состояний.md",
@@ -243,7 +248,6 @@
     "Лист персонажа/Assets/SRD_2014/Character Options/Races/Half-Orc.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Races/Elf.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Races",
-    "Лист персонажа/Assets/SRD_2014/Character Options/Spells/Spells U.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Spells",
     "Лист персонажа/Assets/SRD_2014/Character Options/Fighting Styles",
     "Лист персонажа/Assets/SRD_2014/Character Options/Backgrounds",
