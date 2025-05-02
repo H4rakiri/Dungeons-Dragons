@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "character-sheet.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
@@ -218,6 +218,7 @@
   },
   "active": "b467e22bcba59262",
   "lastOpenFiles": [
+    "Таблица состояний.md",
     "character-sheet.md",
     "Лист персонажа/Character/Background & Features.md",
     "Лист персонажа/Notes/Untitled.md",
@@ -247,7 +248,6 @@
     "Лист персонажа/Assets/SRD_2014/Character Options/Spells/Spells U.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Spells/Spells M.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Spells/Spells Q.md",
-    "Лист персонажа/Assets/SRD_2014/Character Options/Spells/Spells I.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Spells",
     "Лист персонажа/Assets/SRD_2014/Character Options/Fighting Styles",
     "Лист персонажа/Assets/SRD_2014/Character Options/Backgrounds",
