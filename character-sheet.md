@@ -1,29 +1,23 @@
 ---
-name: "Имя персонажа"
-class: "Класс"
-level: 1
-race: "Раса"
-background: "Предыстория"
-alignment: "Мировоззрение"
-experience: 0
-
-# Характеристики
-strength: 10
-dexterity: 10
-constitution: 10
-intelligence: 10
-wisdom: 10
-charisma: 10
-
-# Спасброски
+name: Артис
+class: Воин
+level: 10
+race: Тифлинг
+background: Вор
+alignment: Хаотично добрый
+experience: 600
+strength: 12
+dexterity: 20
+constitution: 15
+intelligence: 14
+wisdom: 13
+charisma: 18
 strengthSaveProficient: false
 dexteritySaveProficient: false
 constitutionSaveProficient: false
 intelligenceSaveProficient: false
 wisdomSaveProficient: false
 charismaSaveProficient: false
-
-# Навыки
 acrobaticsProficient: false
 acrobaticsExpert: false
 animalHandlingProficient: false
@@ -60,31 +54,26 @@ stealthProficient: false
 stealthExpert: false
 survivalProficient: false
 survivalExpert: false
-
-# Боевые характеристики
 armorClass: 10
-speed: 30
+speed: "30"
 maxHp: 10
 currentHp: 10
 tempHp: 0
-hitDice: "1d8"
-
-# Заклинания
-spellcastingAbility: "Интеллект"
+hitDice: 1d8
+spellcastingAbility: Интеллект
 spellSlots:
-  1: 2
-  2: 0
-  3: 0
-  4: 0
-  5: 0
-  6: 0
-  7: 0
-  8: 0
-  9: 0
+  "1": 2
+  "2": 0
+  "3": 0
+  "4": 0
+  "5": 0
+  "6": 0
+  "7": 0
+  "8": 0
+  "9": 0
 ---
 
 ```dataviewjs
-// Функции для расчетов
 const calculateModifier = (score) => Math.floor((score - 10) / 2);
 const calculateProficiencyBonus = (level) => Math.floor((level - 1) / 4) + 2;
 const calculateSkillModifier = (abilityScore, proficient, expert, proficiencyBonus) => {
@@ -93,12 +82,8 @@ const calculateSkillModifier = (abilityScore, proficient, expert, proficiencyBon
     if (proficient) return baseModifier + proficiencyBonus;
     return baseModifier;
 };
-
-// Получаем данные из frontmatter
 const data = dv.current();
 const proficiencyBonus = calculateProficiencyBonus(data.level);
-
-// Создаем HTML для листа персонажа
 const sheet = `
 <div class="character-sheet">
     <style>
@@ -201,11 +186,9 @@ const sheet = `
             border-radius: 3px;
         }
     </style>
-
     <div class="header">
         <h1>Лист персонажа D&D 5e</h1>
     </div>
-
     <div class="section">
         <h2>Основная информация</h2>
         <div class="grid-2">
@@ -235,7 +218,6 @@ const sheet = `
             </div>
         </div>
     </div>
-
     <div class="section">
         <h2>Характеристики</h2>
         <div class="grid-6">
@@ -271,12 +253,10 @@ const sheet = `
             </div>
         </div>
     </div>
-
     <div class="section">
         <h2>Бонус мастерства</h2>
         <div class="proficiency-bonus">+${proficiencyBonus}</div>
     </div>
-
     <div class="section">
         <h2>Спасброски</h2>
         <div class="grid-3">
@@ -306,7 +286,6 @@ const sheet = `
             </div>
         </div>
     </div>
-
     <div class="section">
         <h2>Навыки</h2>
         <div class="grid-3">
@@ -337,7 +316,6 @@ const sheet = `
             `).join('')}
         </div>
     </div>
-
     <div class="section">
         <h2>Боевые характеристики</h2>
         <div class="grid-3">
@@ -367,7 +345,6 @@ const sheet = `
             </div>
         </div>
     </div>
-
     <div class="section">
         <h2>Заклинания</h2>
         <div class="spellcasting-info">
