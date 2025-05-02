@@ -1,19 +1,19 @@
 ---
-name: "Артис"
-class: "Воин"
-level: 10
-race: "Тифлинг"
-background: "Воин"
-alignment: "Хаотично добрый"
-experience: 600
+name: "Имя персонажа"
+class: "Класс"
+level: 1
+race: "Раса"
+background: "Предыстория"
+alignment: "Мировоззрение"
+experience: 0
 
 # Характеристики
-strength: 20
-dexterity: 8
-constitution: 12
-intelligence: 20
-wisdom: 15
-charisma: 12
+strength: 10
+dexterity: 10
+constitution: 10
+intelligence: 10
+wisdom: 10
+charisma: 10
 
 # Спасброски
 strengthSaveProficient: false
@@ -62,20 +62,20 @@ survivalProficient: false
 survivalExpert: false
 
 # Боевые характеристики
-armorClass: 18
+armorClass: 10
 speed: 30
-maxHp: 100
+maxHp: 10
 currentHp: 10
 tempHp: 0
 hitDice: "1d8"
 
 # Заклинания
-spellcastingAbility: "Харизма"
+spellcastingAbility: "Интеллект"
 spellSlots:
   1: 2
-  2: 4
-  3: 4
-  4: 5
+  2: 0
+  3: 0
+  4: 0
   5: 0
   6: 0
   7: 0
@@ -98,117 +98,304 @@ const calculateSkillModifier = (abilityScore, proficient, expert, proficiencyBon
 const data = dv.current();
 const proficiencyBonus = calculateProficiencyBonus(data.level);
 
-// Основная информация
-dv.header(2, "Основная информация");
-dv.table(
-    ["Параметр", "Значение"],
-    [
-        ["Имя персонажа", data.name],
-        ["Класс и уровень", `${data.class} ${data.level}`],
-        ["Раса", data.race],
-        ["Предыстория", data.background],
-        ["Мировоззрение", data.alignment],
-        ["Опыт", data.experience]
-    ]
-);
+// Создаем HTML для листа персонажа
+const sheet = `
+<div class="character-sheet">
+    <style>
+        .character-sheet {
+            font-family: 'Times New Roman', serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            border: 2px solid #8b4513;
+            border-radius: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #8b4513;
+            border-radius: 3px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #8b4513;
+            margin: 0;
+            font-size: 2em;
+        }
+        .grid-2, .grid-3, .grid-6 {
+            display: grid;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-6 { grid-template-columns: repeat(6, 1fr); }
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .field label {
+            font-weight: bold;
+            color: #8b4513;
+        }
+        .ability {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #8b4513;
+            border-radius: 3px;
+        }
+        .ability-name {
+            font-weight: bold;
+            color: #8b4513;
+        }
+        .modifier {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #8b4513;
+        }
+        .proficiency-bonus {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            color: #8b4513;
+        }
+        .saving-throw, .skill {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px;
+            border: 1px solid #8b4513;
+            border-radius: 3px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #8b4513;
+            text-align: left;
+        }
+        th {
+            background-color: #8b4513;
+            color: white;
+        }
+        .spellcasting-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .spell-slot {
+            text-align: center;
+            padding: 8px;
+            border: 1px solid #8b4513;
+            border-radius: 3px;
+        }
+    </style>
 
-// Характеристики
-dv.header(2, "Характеристики");
-dv.table(
-    ["Характеристика", "Значение", "Модификатор"],
-    [
-        ["Сила", data.strength, calculateModifier(data.strength)],
-        ["Ловкость", data.dexterity, calculateModifier(data.dexterity)],
-        ["Телосложение", data.constitution, calculateModifier(data.constitution)],
-        ["Интеллект", data.intelligence, calculateModifier(data.intelligence)],
-        ["Мудрость", data.wisdom, calculateModifier(data.wisdom)],
-        ["Харизма", data.charisma, calculateModifier(data.charisma)]
-    ]
-);
+    <div class="header">
+        <h1>Лист персонажа D&D 5e</h1>
+    </div>
 
-// Бонус мастерства
-dv.header(2, "Бонус мастерства");
-dv.paragraph(`+${proficiencyBonus}`);
+    <div class="section">
+        <h2>Основная информация</h2>
+        <div class="grid-2">
+            <div class="field">
+                <label>Имя персонажа:</label>
+                <div>${data.name}</div>
+            </div>
+            <div class="field">
+                <label>Класс и уровень:</label>
+                <div>${data.class} ${data.level}</div>
+            </div>
+            <div class="field">
+                <label>Раса:</label>
+                <div>${data.race}</div>
+            </div>
+            <div class="field">
+                <label>Предыстория:</label>
+                <div>${data.background}</div>
+            </div>
+            <div class="field">
+                <label>Мировоззрение:</label>
+                <div>${data.alignment}</div>
+            </div>
+            <div class="field">
+                <label>Опыт:</label>
+                <div>${data.experience}</div>
+            </div>
+        </div>
+    </div>
 
-// Спасброски
-dv.header(2, "Спасброски");
-dv.table(
-    ["Характеристика", "Модификатор"],
-    [
-        ["Сила", calculateSkillModifier(data.strength, data.strengthSaveProficient, false, proficiencyBonus)],
-        ["Ловкость", calculateSkillModifier(data.dexterity, data.dexteritySaveProficient, false, proficiencyBonus)],
-        ["Телосложение", calculateSkillModifier(data.constitution, data.constitutionSaveProficient, false, proficiencyBonus)],
-        ["Интеллект", calculateSkillModifier(data.intelligence, data.intelligenceSaveProficient, false, proficiencyBonus)],
-        ["Мудрость", calculateSkillModifier(data.wisdom, data.wisdomSaveProficient, false, proficiencyBonus)],
-        ["Харизма", calculateSkillModifier(data.charisma, data.charismaSaveProficient, false, proficiencyBonus)]
-    ]
-);
+    <div class="section">
+        <h2>Характеристики</h2>
+        <div class="grid-6">
+            <div class="ability">
+                <div class="ability-name">Сила</div>
+                <div>${data.strength}</div>
+                <div class="modifier">${calculateModifier(data.strength) >= 0 ? '+' + calculateModifier(data.strength) : calculateModifier(data.strength)}</div>
+            </div>
+            <div class="ability">
+                <div class="ability-name">Ловкость</div>
+                <div>${data.dexterity}</div>
+                <div class="modifier">${calculateModifier(data.dexterity) >= 0 ? '+' + calculateModifier(data.dexterity) : calculateModifier(data.dexterity)}</div>
+            </div>
+            <div class="ability">
+                <div class="ability-name">Телосложение</div>
+                <div>${data.constitution}</div>
+                <div class="modifier">${calculateModifier(data.constitution) >= 0 ? '+' + calculateModifier(data.constitution) : calculateModifier(data.constitution)}</div>
+            </div>
+            <div class="ability">
+                <div class="ability-name">Интеллект</div>
+                <div>${data.intelligence}</div>
+                <div class="modifier">${calculateModifier(data.intelligence) >= 0 ? '+' + calculateModifier(data.intelligence) : calculateModifier(data.intelligence)}</div>
+            </div>
+            <div class="ability">
+                <div class="ability-name">Мудрость</div>
+                <div>${data.wisdom}</div>
+                <div class="modifier">${calculateModifier(data.wisdom) >= 0 ? '+' + calculateModifier(data.wisdom) : calculateModifier(data.wisdom)}</div>
+            </div>
+            <div class="ability">
+                <div class="ability-name">Харизма</div>
+                <div>${data.charisma}</div>
+                <div class="modifier">${calculateModifier(data.charisma) >= 0 ? '+' + calculateModifier(data.charisma) : calculateModifier(data.charisma)}</div>
+            </div>
+        </div>
+    </div>
 
-// Навыки
-dv.header(2, "Навыки");
-const skills = [
-    ["Акробатика", "dexterity", "acrobatics"],
-    ["Уход за животными", "wisdom", "animalHandling"],
-    ["Магия", "intelligence", "arcana"],
-    ["Атлетика", "strength", "athletics"],
-    ["Обман", "charisma", "deception"],
-    ["История", "intelligence", "history"],
-    ["Проницательность", "wisdom", "insight"],
-    ["Запугивание", "charisma", "intimidation"],
-    ["Расследование", "intelligence", "investigation"],
-    ["Медицина", "wisdom", "medicine"],
-    ["Природа", "intelligence", "nature"],
-    ["Восприятие", "wisdom", "perception"],
-    ["Выступление", "charisma", "performance"],
-    ["Убеждение", "charisma", "persuasion"],
-    ["Религия", "intelligence", "religion"],
-    ["Ловкость рук", "dexterity", "sleightOfHand"],
-    ["Скрытность", "dexterity", "stealth"],
-    ["Выживание", "wisdom", "survival"]
-];
+    <div class="section">
+        <h2>Бонус мастерства</h2>
+        <div class="proficiency-bonus">+${proficiencyBonus}</div>
+    </div>
 
-dv.table(
-    ["Навык", "Модификатор"],
-    skills.map(([name, ability, skill]) => [
-        name,
-        calculateSkillModifier(
-            data[ability],
-            data[`${skill}Proficient`],
-            data[`${skill}Expert`],
-            proficiencyBonus
-        )
-    ])
-);
+    <div class="section">
+        <h2>Спасброски</h2>
+        <div class="grid-3">
+            <div class="saving-throw">
+                <div>Сила</div>
+                <div class="modifier">${calculateSkillModifier(data.strength, data.strengthSaveProficient, false, proficiencyBonus) >= 0 ? '+' + calculateSkillModifier(data.strength, data.strengthSaveProficient, false, proficiencyBonus) : calculateSkillModifier(data.strength, data.strengthSaveProficient, false, proficiencyBonus)}</div>
+            </div>
+            <div class="saving-throw">
+                <div>Ловкость</div>
+                <div class="modifier">${calculateSkillModifier(data.dexterity, data.dexteritySaveProficient, false, proficiencyBonus) >= 0 ? '+' + calculateSkillModifier(data.dexterity, data.dexteritySaveProficient, false, proficiencyBonus) : calculateSkillModifier(data.dexterity, data.dexteritySaveProficient, false, proficiencyBonus)}</div>
+            </div>
+            <div class="saving-throw">
+                <div>Телосложение</div>
+                <div class="modifier">${calculateSkillModifier(data.constitution, data.constitutionSaveProficient, false, proficiencyBonus) >= 0 ? '+' + calculateSkillModifier(data.constitution, data.constitutionSaveProficient, false, proficiencyBonus) : calculateSkillModifier(data.constitution, data.constitutionSaveProficient, false, proficiencyBonus)}</div>
+            </div>
+            <div class="saving-throw">
+                <div>Интеллект</div>
+                <div class="modifier">${calculateSkillModifier(data.intelligence, data.intelligenceSaveProficient, false, proficiencyBonus) >= 0 ? '+' + calculateSkillModifier(data.intelligence, data.intelligenceSaveProficient, false, proficiencyBonus) : calculateSkillModifier(data.intelligence, data.intelligenceSaveProficient, false, proficiencyBonus)}</div>
+            </div>
+            <div class="saving-throw">
+                <div>Мудрость</div>
+                <div class="modifier">${calculateSkillModifier(data.wisdom, data.wisdomSaveProficient, false, proficiencyBonus) >= 0 ? '+' + calculateSkillModifier(data.wisdom, data.wisdomSaveProficient, false, proficiencyBonus) : calculateSkillModifier(data.wisdom, data.wisdomSaveProficient, false, proficiencyBonus)}</div>
+            </div>
+            <div class="saving-throw">
+                <div>Харизма</div>
+                <div class="modifier">${calculateSkillModifier(data.charisma, data.charismaSaveProficient, false, proficiencyBonus) >= 0 ? '+' + calculateSkillModifier(data.charisma, data.charismaSaveProficient, false, proficiencyBonus) : calculateSkillModifier(data.charisma, data.charismaSaveProficient, false, proficiencyBonus)}</div>
+            </div>
+        </div>
+    </div>
 
-// Боевые характеристики
-dv.header(2, "Боевые характеристики");
-dv.table(
-    ["Параметр", "Значение"],
-    [
-        ["Класс доспеха", data.armorClass],
-        ["Скорость", data.speed],
-        ["Максимум хитов", data.maxHp],
-        ["Текущие хиты", data.currentHp],
-        ["Временные хиты", data.tempHp],
-        ["Кости хитов", data.hitDice]
-    ]
-);
+    <div class="section">
+        <h2>Навыки</h2>
+        <div class="grid-3">
+            ${[
+                ["Акробатика", "dexterity", "acrobatics"],
+                ["Уход за животными", "wisdom", "animalHandling"],
+                ["Магия", "intelligence", "arcana"],
+                ["Атлетика", "strength", "athletics"],
+                ["Обман", "charisma", "deception"],
+                ["История", "intelligence", "history"],
+                ["Проницательность", "wisdom", "insight"],
+                ["Запугивание", "charisma", "intimidation"],
+                ["Расследование", "intelligence", "investigation"],
+                ["Медицина", "wisdom", "medicine"],
+                ["Природа", "intelligence", "nature"],
+                ["Восприятие", "wisdom", "perception"],
+                ["Выступление", "charisma", "performance"],
+                ["Убеждение", "charisma", "persuasion"],
+                ["Религия", "intelligence", "religion"],
+                ["Ловкость рук", "dexterity", "sleightOfHand"],
+                ["Скрытность", "dexterity", "stealth"],
+                ["Выживание", "wisdom", "survival"]
+            ].map(([name, ability, skill]) => `
+                <div class="skill">
+                    <div>${name}</div>
+                    <div class="modifier">${calculateSkillModifier(data[ability], data[`${skill}Proficient`], data[`${skill}Expert`], proficiencyBonus) >= 0 ? '+' + calculateSkillModifier(data[ability], data[`${skill}Proficient`], data[`${skill}Expert`], proficiencyBonus) : calculateSkillModifier(data[ability], data[`${skill}Proficient`], data[`${skill}Expert`], proficiencyBonus)}</div>
+                </div>
+            `).join('')}
+        </div>
+    </div>
 
-// Заклинания
-dv.header(2, "Заклинания");
-dv.table(
-    ["Параметр", "Значение"],
-    [
-        ["Характеристика заклинаний", data.spellcastingAbility],
-        ["Сл спасброска от заклинаний", 8 + proficiencyBonus + calculateModifier(data[data.spellcastingAbility.toLowerCase()])],
-        ["Бонус атаки заклинаниями", proficiencyBonus + calculateModifier(data[data.spellcastingAbility.toLowerCase()])]
-    ]
-);
+    <div class="section">
+        <h2>Боевые характеристики</h2>
+        <div class="grid-3">
+            <div class="field">
+                <label>Класс доспеха:</label>
+                <div>${data.armorClass}</div>
+            </div>
+            <div class="field">
+                <label>Скорость:</label>
+                <div>${data.speed}</div>
+            </div>
+            <div class="field">
+                <label>Максимум хитов:</label>
+                <div>${data.maxHp}</div>
+            </div>
+            <div class="field">
+                <label>Текущие хиты:</label>
+                <div>${data.currentHp}</div>
+            </div>
+            <div class="field">
+                <label>Временные хиты:</label>
+                <div>${data.tempHp}</div>
+            </div>
+            <div class="field">
+                <label>Кости хитов:</label>
+                <div>${data.hitDice}</div>
+            </div>
+        </div>
+    </div>
 
-// Ячейки заклинаний
-dv.header(3, "Ячейки заклинаний");
-dv.table(
-    ["Уровень", "Количество"],
-    Object.entries(data.spellSlots).map(([level, slots]) => [level, slots])
-);
+    <div class="section">
+        <h2>Заклинания</h2>
+        <div class="spellcasting-info">
+            <div class="field">
+                <label>Характеристика заклинаний:</label>
+                <div>${data.spellcastingAbility}</div>
+            </div>
+            <div class="field">
+                <label>Сл спасброска от заклинаний:</label>
+                <div>${8 + proficiencyBonus + calculateModifier(data[data.spellcastingAbility.toLowerCase()])}</div>
+            </div>
+            <div class="field">
+                <label>Бонус атаки заклинаниями:</label>
+                <div>${proficiencyBonus + calculateModifier(data[data.spellcastingAbility.toLowerCase()]) >= 0 ? '+' + (proficiencyBonus + calculateModifier(data[data.spellcastingAbility.toLowerCase()])) : proficiencyBonus + calculateModifier(data[data.spellcastingAbility.toLowerCase()])}</div>
+            </div>
+        </div>
+        <h3>Ячейки заклинаний</h3>
+        <div class="grid-9">
+            ${Object.entries(data.spellSlots).map(([level, slots]) => `
+                <div class="spell-slot">
+                    <div>${level}-й</div>
+                    <div>${slots}</div>
+                </div>
+            `).join('')}
+        </div>
+    </div>
+</div>
+`;
+
+dv.paragraph(sheet);
 ```
