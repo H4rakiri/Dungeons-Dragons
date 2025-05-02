@@ -275,7 +275,6 @@ sheet.appendChild(spells);
 // Добавляем лист на страницу
 dv.container.appendChild(sheet);
 ```
-
 	## Метаданные персонажа
 
 ```yaml
