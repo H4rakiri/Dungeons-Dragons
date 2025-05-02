@@ -1,5 +1,6 @@
 # Лист персонажа D&D 5e
 
+```dataviewjs
 <div class="character-sheet">
     <div class="header">
         <div class="character-info">
@@ -387,14 +388,12 @@ function updateAbilityModifiers() {
         modifierElement.textContent = modifier >= 0 ? `+${modifier}` : modifier;
     });
 }
-
 // Функция для обновления бонуса мастерства
 function updateProficiencyBonus() {
     const level = parseInt(document.getElementById('character-level').value) || 1;
     const bonus = calculateProficiencyBonus(level);
     document.getElementById('proficiency-bonus').textContent = `+${bonus}`;
 }
-
 // Функция для обновления модификаторов навыков
 function updateSkillModifiers() {
     const proficiencyBonus = parseInt(document.getElementById('proficiency-bonus').textContent);
@@ -416,7 +415,6 @@ function updateSkillModifiers() {
         }
     });
 }
-
 // Функция для обновления спасбросков
 function updateSavingThrows() {
     const proficiencyBonus = parseInt(document.getElementById('proficiency-bonus').textContent);
@@ -432,7 +430,6 @@ function updateSavingThrows() {
         throwEl.querySelector('.modifier').textContent = totalModifier >= 0 ? `+${totalModifier}` : totalModifier;
     });
 }
-
 // Функция для обновления Сл спасброска от заклинаний
 function updateSpellSaveDC() {
     const proficiencyBonus = parseInt(document.getElementById('proficiency-bonus').textContent);
@@ -442,7 +439,6 @@ function updateSpellSaveDC() {
     const spellSaveDC = 8 + proficiencyBonus + abilityModifier;
     document.getElementById('spell-save-dc').textContent = spellSaveDC;
 }
-
 // Функция для обновления бонуса атаки заклинаниями
 function updateSpellAttackBonus() {
     const proficiencyBonus = parseInt(document.getElementById('proficiency-bonus').textContent);
@@ -452,7 +448,6 @@ function updateSpellAttackBonus() {
     const spellAttackBonus = proficiencyBonus + abilityModifier;
     document.getElementById('spell-attack-bonus').textContent = spellAttackBonus >= 0 ? `+${spellAttackBonus}` : spellAttackBonus;
 }
-
 // Добавляем обработчики событий
 document.addEventListener('DOMContentLoaded', () => {
     // Обновляем все значения при загрузке страницы
@@ -499,3 +494,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 </script>
+```
