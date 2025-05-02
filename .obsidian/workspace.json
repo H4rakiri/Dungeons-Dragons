@@ -15,7 +15,7 @@
               "state": {
                 "file": "character-sheet.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "character-sheet"
@@ -163,16 +163,6 @@
             }
           },
           {
-            "id": "8009633eef3f9157",
-            "type": "leaf",
-            "state": {
-              "type": "side-panel-control-view",
-              "state": {},
-              "icon": "viewIcon",
-              "title": "Markdown-Autocomplete"
-            }
-          },
-          {
             "id": "a1b58e48345c8024",
             "type": "leaf",
             "state": {
@@ -190,9 +180,19 @@
               "icon": "links-coming-in",
               "title": "Обратные ссылки для character-sheet"
             }
+          },
+          {
+            "id": "23ae4c0984d1ec6a",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {},
+              "icon": "viewIcon",
+              "title": "Markdown-Autocomplete"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
