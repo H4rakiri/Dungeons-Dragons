@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "character-sheet.md",
+                "file": "Лист персонажа/Character/Background & Features.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "character-sheet"
+              "title": "Background & Features"
             }
           }
         ]
@@ -178,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "character-sheet.md",
+                "file": "Лист персонажа/Character/Background & Features.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для character-sheet"
+              "title": "Обратные ссылки для Background & Features"
             }
           }
         ],
@@ -217,34 +217,42 @@
   },
   "active": "f83be656121cff03",
   "lastOpenFiles": [
+    "Лист персонажа/Notes/Untitled.md",
+    "Лист персонажа/Notes/Notes.md",
+    "Лист персонажа/Legal.md",
     "character-sheet.md",
-    "Рандомайзеры d100.md",
-    "Боги D&D.md",
-    "Легенды и мифы/Фейрунский пантеон/Лолит.md",
-    "Легенды и мифы/Фейрунский пантеон/Кельморвен.md",
-    "Легенды и мифы/Фейрунский пантеон/Гонд.md",
-    "Легенды и мифы/Фейрунский пантеон/Денеир.md",
-    "Легенды и мифы/Боги D&D.md",
-    "Таблица магических предметов.md",
-    "Предметы/Магические предметы/Предметы/Абракадабрус.md",
-    "Предметы/Магические предметы/Предметы/Адская машина Лума Безумного.md",
-    "Легенды и мифы/Фейрунский пантеон/Огма.md",
-    "Легенды и мифы/Фейрунский пантеон/Мистра.md",
-    "Легенды и мифы/Фейрунский пантеон/Миеки.md",
-    "Легенды и мифы/Фейрунский пантеон/Маск.md",
-    "Легенды и мифы/Фейрунский пантеон/Малик.md",
-    "Легенды и мифы/Фейрунский пантеон/Ловкиар.md",
-    "Легенды и мифы/Фейрунский пантеон/Латандер.md",
-    "Легенды и мифы/Пантеон Эберрона/Дол Арран (Свет).md",
-    "Легенды и мифы/Фейрунский пантеон/Векна.md",
-    "Легенды и мифы/Фейрунский пантеон/Бейн.md",
-    "Легенды и мифы/Фейрунский пантеон/Баал.md",
-    "Легенды и мифы/Пантеон Эберрона/Дол Дорн (Природа).md",
-    "Легенды и мифы/Пантеон Эберрона/Дол Дорн (Война).md",
-    "Легенды и мифы/Пантеон Эберрона/Дол Денна.md",
-    "Легенды и мифы/Пантеон Эберрона/Дол Арран.md",
-    "Остальное/d100 Таблицы",
-    "Остальное/Шаблоны",
+    "Лист персонажа/Character/Combat.md",
+    "Лист персонажа/Character/Quick Sheet.md",
+    "Лист персонажа/Character/Background & Features.md",
+    "Лист персонажа/Character",
+    "Лист персонажа/Assets/OtherReference/Template/5e GM Screen.md",
+    "Лист персонажа/Assets/OtherReference/Template/player_hp.md",
+    "Лист персонажа/Assets/OtherReference/Template/ship_hp.md",
+    "Лист персонажа/Assets/OtherReference/Template/templater-cheat-sheet.md",
+    "Лист персонажа/Assets/OtherReference/Template/Spells Callouts.md",
+    "Лист персонажа/Assets/OtherReference/Template",
+    "Лист персонажа/Assets/OtherReference",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Races/Dragonborn.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Races/Halfling.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Races/# Racial Traits.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Races/Tiefling.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Races/Human.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Races/Half-Elf.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Races/Dwarf.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Races/Gnome.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Races/Half-Orc.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Races/Elf.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Races",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Spells/Spells U.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Spells/Spells M.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Spells/Spells Q.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Spells/Spells I.md",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Spells",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Fighting Styles",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Backgrounds",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Feats",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Classes",
+    "Лист персонажа/Assets/SRD_2014/Character Options/Characterizations",
     "Остальное/Портреты богов/Мистра.jpg",
     "Остальное/Портреты богов/Миеки.jpg",
     "Остальное/Портреты богов/Маск.jpg",
@@ -254,14 +262,6 @@
     "Остальное/Портреты богов/Латандер.jpg",
     "Остальное/Портреты богов/Кельморвен.jpg",
     "Остальное/Портреты богов/Денеир.jpg",
-    "Остальное/Портреты богов/Гонд.jpg",
-    "Остальное/Портреты богов",
-    "Остальное/Новая папка",
-    "Остальное",
-    "Новая папка",
-    "Легенды и мифы/Грейхокский пантеон",
-    "Легенды и мифы/Пантеон Дарк Сан",
-    "Легенды и мифы/Пантеон Эберрона",
-    "Легенды и мифы/Пантеон Драгонланса"
+    "Остальное/Портреты богов/Гонд.jpg"
   ]
 }

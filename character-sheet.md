@@ -362,11 +362,11 @@ document.addEventListener('DOMContentLoaded', () => {
 ## Метаданные персонажа
 
 ```yaml
-name: ""
-class: ""
-level: 1
+name: "Артис"
+class: "Воин"
+level: 10
 background: ""
-playerName: ""
+playerName: "Артем"
 race: ""
 alignment: ""
 experience: 0
@@ -380,7 +380,7 @@ wisdom: 10
 charisma: 10
 
 # Спасброски
-strengthSaveProficient: false
+strengthSaveProficient: true
 dexteritySaveProficient: false
 constitutionSaveProficient: false
 intelligenceSaveProficient: false
