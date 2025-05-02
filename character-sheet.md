@@ -365,9 +365,9 @@ document.addEventListener('DOMContentLoaded', () => {
 name: "Артис"
 class: "Воин"
 level: 10
-background: ""
+background: "Воин"
 playerName: "Артем"
-race: ""
+race: "Тифлинг"
 alignment: ""
 experience: 0
 
@@ -380,7 +380,7 @@ wisdom: 10
 charisma: 10
 
 # Спасброски
-strengthSaveProficient: true
+strengthSaveProficient: false
 dexteritySaveProficient: false
 constitutionSaveProficient: false
 intelligenceSaveProficient: false

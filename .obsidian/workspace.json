@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Лист персонажа/Character/Background & Features.md",
+                "file": "character-sheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Background & Features"
+              "title": "character-sheet"
             }
           }
         ]
@@ -178,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Лист персонажа/Character/Background & Features.md",
+                "file": "character-sheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Background & Features"
+              "title": "Обратные ссылки для character-sheet"
             }
           }
         ],
@@ -217,13 +217,13 @@
   },
   "active": "f83be656121cff03",
   "lastOpenFiles": [
+    "Лист персонажа/Character/Background & Features.md",
     "Лист персонажа/Notes/Untitled.md",
     "Лист персонажа/Notes/Notes.md",
     "Лист персонажа/Legal.md",
     "character-sheet.md",
     "Лист персонажа/Character/Combat.md",
     "Лист персонажа/Character/Quick Sheet.md",
-    "Лист персонажа/Character/Background & Features.md",
     "Лист персонажа/Character",
     "Лист персонажа/Assets/OtherReference/Template/5e GM Screen.md",
     "Лист персонажа/Assets/OtherReference/Template/player_hp.md",
