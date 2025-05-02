@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Генератор домов с лутом.md",
+                "file": "Рандомайзеры d100.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Генератор домов с лутом"
+              "title": "Рандомайзеры d100"
             }
           }
         ]
@@ -218,8 +218,10 @@
   },
   "active": "6bceaf87091e2412",
   "lastOpenFiles": [
+    "Остальное/Генераторы/Генератор таверны.md",
     "Генератор домов.md",
-    "Генератор домов с лутом.md",
+    "Остальное/Генераторы/Генератор домов с лутом.md",
+    "Остальное/Генераторы",
     "character-sheet.md",
     "Заклинания/Заклинания/Огненный шар.md",
     "Легенды и мифы/Боги D&D.md",
@@ -246,14 +248,12 @@
     "Лист персонажа/Assets/SRD_2014/Character Options/Races/Half-Elf.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Races/Dwarf.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Races/Gnome.md",
-    "Лист персонажа/Assets/SRD_2014/Character Options/Races/Half-Orc.md",
     "Лист персонажа/Assets/SRD_2014/Character Options/Races",
     "Лист персонажа/Assets/SRD_2014/Character Options/Spells",
     "Лист персонажа/Assets/SRD_2014/Character Options/Fighting Styles",
     "Лист персонажа/Assets/SRD_2014/Character Options/Backgrounds",
     "Лист персонажа/Assets/SRD_2014/Character Options/Feats",
     "Лист персонажа/Assets/SRD_2014/Character Options/Classes",
-    "Лист персонажа/Assets/SRD_2014/Character Options/Characterizations",
     "Остальное/Портреты богов/Мистра.jpg",
     "Остальное/Портреты богов/Миеки.jpg",
     "Остальное/Портреты богов/Маск.jpg",
