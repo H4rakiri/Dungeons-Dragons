@@ -1,0 +1,263 @@
+/* character-sheet-premium-dark.css */
+
+.character-sheet {
+  background: linear-gradient(120deg, #181c20 0%, #232946 100%) !important;
+  color: #e6e6e6;
+  font-family: "Inter", "SF Pro Display", "Segoe UI", "Roboto", Arial,
+    sans-serif;
+  font-size: 1.15em;
+  line-height: 1.85;
+  min-height: 100vh;
+  padding: 56px 0 72px 0;
+  letter-spacing: 0.01em;
+}
+
+.character-sheet h1,
+.character-sheet h2,
+.character-sheet h3,
+.character-sheet h4 {
+  font-family: inherit;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 2.7em;
+  margin-bottom: 1.3em;
+  background: rgba(32, 36, 44, 0.72);
+  border-radius: 22px;
+  padding: 0.7em 2.2em 0.7em 2.7em;
+  box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.16), 0 1.5px 0 #bfcfff33;
+  border: none;
+  text-shadow: 0 1px 2px #0008;
+  position: relative;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  animation: fadeInDown 0.7s;
+}
+
+.character-sheet h1 {
+  font-size: 2.8em;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  margin-bottom: 2.2em;
+  background: rgba(32, 36, 44, 0.92);
+  box-shadow: 0 12px 64px 0 rgba(0, 0, 0, 0.22);
+  animation: fadeInDown 1s;
+}
+
+.character-sheet h2:before {
+  content: "\1F4C4"; /* 📄 */
+  font-size: 1.1em;
+  margin-right: 0.7em;
+  opacity: 0.7;
+  vertical-align: -0.1em;
+}
+.character-sheet h3:before {
+  content: "\272A"; /* ✪ */
+  font-size: 1em;
+  margin-right: 0.6em;
+  opacity: 0.6;
+  vertical-align: -0.1em;
+}
+
+.character-sheet hr {
+  border: none;
+  border-top: 1.5px solid #bfcfff33;
+  margin: 2.7em 0;
+  opacity: 0.6;
+  box-shadow: 0 1px 0 #fff1, 0 0.5px 0 #bfcfff22;
+  animation: fadeIn 1.2s;
+}
+
+.character-sheet table {
+  width: 100%;
+  margin: 2.2em 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(32, 36, 44, 0.78);
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.13), 0 1.5px 0 #bfcfff22;
+  backdrop-filter: blur(14px);
+  animation: fadeInUp 0.8s;
+}
+
+.character-sheet thead {
+  background: rgba(44, 48, 56, 0.92);
+}
+
+.character-sheet th,
+.character-sheet td {
+  padding: 1.2em 1.7em;
+  text-align: left;
+  border-bottom: 1.5px solid #23294622;
+  font-size: 1.15em;
+  transition: background 0.2s;
+}
+
+.character-sheet th {
+  color: #fff;
+  font-weight: 700;
+  background: rgba(44, 48, 56, 0.92);
+  border-bottom: 2.5px solid #23294633;
+  letter-spacing: 0.04em;
+}
+
+.character-sheet tr:last-child td {
+  border-bottom: none;
+}
+
+.character-sheet tr {
+  transition: background 0.2s;
+}
+.character-sheet tr:hover {
+  background: rgba(191, 207, 255, 0.04);
+}
+
+.character-sheet blockquote {
+  background: rgba(32, 36, 44, 0.62);
+  border-left: 4px solid #bfcfff;
+  border-radius: 16px;
+  margin: 2.2em 0;
+  padding: 1.3em 2.2em;
+  color: #bfcfff;
+  font-style: italic;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.7s;
+}
+
+.character-sheet ul,
+.character-sheet ol {
+  background: rgba(32, 36, 44, 0.38);
+  border-radius: 16px;
+  padding: 1.3em 2.2em 1.3em 2.9em;
+  margin: 1.9em 0;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(7px);
+  animation: fadeInUp 0.8s;
+}
+
+.character-sheet li {
+  margin-bottom: 0.8em;
+  font-size: 1.15em;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.character-sheet li:hover {
+  color: #bfcfff;
+}
+
+.character-sheet input[type="checkbox"] {
+  accent-color: #bfcfff;
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 5px;
+  border: 2px solid #bfcfff;
+  background: #232946;
+  box-shadow: 0 1px 6px 0 #bfcfff33;
+  transition: border 0.2s, box-shadow 0.2s;
+  vertical-align: middle;
+}
+
+.character-sheet input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px #bfcfff55;
+  border-color: #fff;
+}
+
+.character-sheet code,
+.character-sheet pre {
+  background: rgba(44, 48, 56, 0.92);
+  color: #ffb300;
+  border-radius: 10px;
+  padding: 0.35em 0.8em;
+  font-family: "Fira Mono", "Consolas", monospace;
+  font-size: 1.05em;
+  animation: fadeIn 0.7s;
+}
+
+.character-sheet pre {
+  padding: 1.3em;
+  font-size: 1.09em;
+  overflow-x: auto;
+}
+
+.character-sheet strong {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.character-sheet em {
+  color: #bfcfff;
+}
+
+.character-sheet .callout {
+  background: rgba(44, 48, 56, 0.92) !important;
+  border-left: 5px solid #bfcfff !important;
+  border-radius: 18px !important;
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.1);
+  color: #e6e6e6 !important;
+  backdrop-filter: blur(12px) !important;
+  animation: fadeInUp 0.8s;
+}
+
+.character-sheet a {
+  color: #bfcfff;
+  text-decoration: underline dotted;
+  transition: color 0.2s, text-shadow 0.2s;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+
+.character-sheet a:hover {
+  color: #fff;
+  text-shadow: 0 2px 8px #bfcfff99;
+}
+
+@media (max-width: 700px) {
+  .character-sheet table,
+  .character-sheet thead,
+  .character-sheet tbody,
+  .character-sheet th,
+  .character-sheet td,
+  .character-sheet tr {
+    display: block;
+    width: 100%;
+  }
+  .character-sheet th,
+  .character-sheet td {
+    padding: 0.8em 0.9em;
+    font-size: 1em;
+  }
+  .character-sheet {
+    padding: 10px 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

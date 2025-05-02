@@ -1,0 +1,191 @@
+/* character-sheet-modern-dark.css */
+
+.character-sheet {
+  background: linear-gradient(135deg, #181c20 0%, #232946 100%) !important;
+  color: #e3e6eb;
+  padding: 40px 0;
+  font-size: 1.12em;
+  line-height: 1.75;
+  min-height: 100vh;
+}
+
+.character-sheet h1,
+.character-sheet h2,
+.character-sheet h3,
+.character-sheet h4,
+.character-sheet h5,
+.character-sheet h6 {
+  font-family: "Montserrat", "Roboto", "Segoe UI", Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #00eaff;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  background: rgba(24, 28, 32, 0.85);
+  border-radius: 18px;
+  padding: 0.5em 1.5em;
+  box-shadow: 0 4px 32px 0 rgba(0, 255, 255, 0.08), 0 1.5px 0 #00eaff;
+  border-bottom: 3px solid #00eaff;
+  text-shadow: 0 0 8px #00eaff44, 0 2px 8px #000a;
+  transition: background 0.3s, color 0.3s;
+}
+
+.character-sheet h1 {
+  font-size: 2.5em;
+  color: #fff;
+  background: linear-gradient(90deg, #00eaff 0%, #232946 100%);
+  border-bottom: 4px solid #00eaff;
+  text-shadow: 0 0 16px #00eaff99, 0 4px 16px #000a;
+}
+
+.character-sheet hr {
+  border: none;
+  border-top: 2.5px solid #00eaff44;
+  margin: 2.5em 0;
+}
+
+.character-sheet table {
+  width: 100%;
+  margin: 2em 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(36, 42, 60, 0.7);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 6px 36px 0 #00eaff22, 0 1.5px 0 #00eaff;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.7s;
+}
+
+.character-sheet thead {
+  background: rgba(0, 234, 255, 0.13);
+}
+
+.character-sheet th,
+.character-sheet td {
+  padding: 1.1em 1.5em;
+  text-align: left;
+  border-bottom: 1.5px solid #00eaff22;
+  font-size: 1.13em;
+}
+
+.character-sheet th {
+  color: #00eaff;
+  font-weight: 800;
+  background: rgba(0, 234, 255, 0.13);
+  border-bottom: 2.5px solid #00eaff44;
+  letter-spacing: 0.04em;
+}
+
+.character-sheet tr:last-child td {
+  border-bottom: none;
+}
+
+.character-sheet blockquote {
+  background: rgba(0, 234, 255, 0.1);
+  border-left: 5px solid #00eaff;
+  border-radius: 14px;
+  margin: 2em 0;
+  padding: 1.2em 2em;
+  color: #b0eaff;
+  font-style: italic;
+  box-shadow: 0 2px 16px 0 #00eaff22;
+  backdrop-filter: blur(8px);
+  animation: fadeIn 0.7s;
+}
+
+.character-sheet ul,
+.character-sheet ol {
+  background: rgba(0, 234, 255, 0.07);
+  border-radius: 14px;
+  padding: 1.2em 2em 1.2em 2.7em;
+  margin: 1.7em 0;
+  box-shadow: 0 2px 12px 0 #00eaff11;
+  backdrop-filter: blur(5px);
+}
+
+.character-sheet li {
+  margin-bottom: 0.7em;
+  font-size: 1.13em;
+  position: relative;
+}
+
+.character-sheet input[type="checkbox"] {
+  accent-color: #00eaff;
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 5px;
+  border: 2px solid #00eaff;
+  background: #232946;
+  box-shadow: 0 1px 6px 0 #00eaff33;
+  transition: border 0.2s;
+}
+
+.character-sheet input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 2px #00eaff99;
+}
+
+.character-sheet code,
+.character-sheet pre {
+  background: rgba(0, 234, 255, 0.13);
+  color: #ffb300;
+  border-radius: 8px;
+  padding: 0.3em 0.7em;
+  font-family: "Fira Mono", "Consolas", monospace;
+}
+
+.character-sheet pre {
+  padding: 1.2em;
+  font-size: 1.08em;
+  overflow-x: auto;
+}
+
+.character-sheet strong {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.character-sheet em {
+  color: #00eaff;
+}
+
+.character-sheet .callout {
+  background: linear-gradient(90deg, #232946 60%, #00eaff22 100%) !important;
+  border-left: 5px solid #00eaff !important;
+  border-radius: 16px !important;
+  box-shadow: 0 2px 24px 0 #00eaff22;
+  color: #e3e6eb !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+@media (max-width: 700px) {
+  .character-sheet table,
+  .character-sheet thead,
+  .character-sheet tbody,
+  .character-sheet th,
+  .character-sheet td,
+  .character-sheet tr {
+    display: block;
+    width: 100%;
+  }
+  .character-sheet th,
+  .character-sheet td {
+    padding: 0.8em 0.9em;
+    font-size: 1em;
+  }
+  .character-sheet {
+    padding: 10px 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
