@@ -15,7 +15,7 @@
               "state": {
                 "file": "character-sheet.md",
                 "mode": "preview",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "character-sheet"
