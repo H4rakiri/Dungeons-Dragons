@@ -192,12 +192,11 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 333.5,
-    "collapsed": true
+    "width": 333.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,7 +215,7 @@
       "pexels-banner:🚩 Pixel Banner Menu": false
     }
   },
-  "active": "6bceaf87091e2412",
+  "active": "c351b199a5e40b4a",
   "lastOpenFiles": [
     "character-sheet.md",
     "Генератор домов.md",
