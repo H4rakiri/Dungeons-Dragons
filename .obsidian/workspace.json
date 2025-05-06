@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07 - Интерактивные карты/Leaflet Инструкция.md",
+                "file": "Рандомайзеры d100.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Leaflet Инструкция"
+              "title": "Рандомайзеры d100"
             }
           }
         ],
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "07 - Интерактивные карты/Leaflet Инструкция.md",
+                "file": "Рандомайзеры d100.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Leaflet Инструкция"
+              "title": "Обратные ссылки для Рандомайзеры d100"
             }
           },
           {
@@ -149,12 +149,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "07 - Интерактивные карты/Leaflet Инструкция.md",
+                "file": "Рандомайзеры d100.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Leaflet Инструкция"
+              "title": "Исходящие ссылки из Рандомайзеры d100"
             }
           },
           {
@@ -178,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "07 - Интерактивные карты/Leaflet Инструкция.md",
+                "file": "Рандомайзеры d100.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Leaflet Инструкция"
+              "title": "Структура Рандомайзеры d100"
             }
           }
         ]
@@ -229,8 +229,8 @@
   },
   "active": "867023b9b7cccdbf",
   "lastOpenFiles": [
-    "07 - Интерактивные карты/Карта 1.md",
     "07 - Интерактивные карты/Leaflet Инструкция.md",
+    "07 - Интерактивные карты/Карта 1.md",
     "01 - Бестиарий/Существа/Ааракокра.md",
     "01 - Бестиарий/Поиск существ/Я.md",
     "01 - Бестиарий/Существа/Ягнолот.md",
