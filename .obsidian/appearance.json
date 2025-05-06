@@ -1,13 +1,13 @@
 {
   "cssTheme": "",
-  "theme": "system",
+  "theme": "obsidian",
   "enabledCssSnippets": [
     "preview-default",
     "dnd-obsidian",
-    "DnD Style",
-    "beautiful-dataview",
     "spellcard",
-    "character-shee-premium"
+    "beautiful-dataview",
+    "DnD Style",
+    "new-dnd"
   ],
   "accentColor": ""
 }

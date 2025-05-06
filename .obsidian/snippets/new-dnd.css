@@ -1,0 +1,200 @@
+/* New D&D Book Style for Obsidian
+ * A modern take on classic D&D book styling
+ * Usage: Add 'cssclasses: new-dnd' to your document
+ */
+
+/* Base styles for both themes */
+.new-dnd {
+    --dnd-primary: #8B4513;
+    --dnd-secondary: #D2B48C;
+    --dnd-accent: #CD853F;
+    --dnd-text: #2C1810;
+    --dnd-background: #F5F5DC;
+    --dnd-border: #8B4513;
+    --dnd-header-bg: #D2B48C;
+    --dnd-header-text: #2C1810;
+    --dnd-quote-bg: #F0E6D2;
+    --dnd-quote-border: #CD853F;
+    --dnd-table-header: #D2B48C;
+    --dnd-table-border: #8B4513;
+    --dnd-code-bg: #F0E6D2;
+    --dnd-code-border: #CD853F;
+}
+
+/* Dark theme overrides */
+.theme-dark .new-dnd {
+    --dnd-primary: #D2B48C;
+    --dnd-secondary: #8B4513;
+    --dnd-accent: #CD853F;
+    --dnd-text: #F5F5DC;
+    --dnd-background: #2C1810;
+    --dnd-border: #D2B48C;
+    --dnd-header-bg: #8B4513;
+    --dnd-header-text: #F5F5DC;
+    --dnd-quote-bg: #3C2820;
+    --dnd-quote-border: #CD853F;
+    --dnd-table-header: #8B4513;
+    --dnd-table-border: #D2B48C;
+    --dnd-code-bg: #3C2820;
+    --dnd-code-border: #CD853F;
+}
+
+/* Main content styling */
+.new-dnd {
+    font-family: 'Crimson Text', Georgia, serif;
+    line-height: 1.6;
+    color: var(--dnd-text);
+    background-color: var(--dnd-background);
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid var(--dnd-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headers */
+.new-dnd h1,
+.new-dnd h2,
+.new-dnd h3,
+.new-dnd h4,
+.new-dnd h5,
+.new-dnd h6 {
+    font-family: 'Cinzel', 'Times New Roman', serif;
+    color: var(--dnd-primary);
+    border-bottom: 2px solid var(--dnd-border);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.new-dnd h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+.new-dnd h2 {
+    font-size: 2rem;
+    border-left: 4px solid var(--dnd-accent);
+    padding-left: 1rem;
+}
+
+/* Paragraphs and text */
+.new-dnd p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Lists */
+.new-dnd ul,
+.new-dnd ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.new-dnd li {
+    margin-bottom: 0.5rem;
+}
+
+/* Blockquotes */
+.new-dnd blockquote {
+    background-color: var(--dnd-quote-bg);
+    border-left: 4px solid var(--dnd-quote-border);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+/* Tables */
+.new-dnd table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.new-dnd th {
+    background-color: var(--dnd-table-header);
+    color: var(--dnd-header-text);
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid var(--dnd-table-border);
+}
+
+.new-dnd td {
+    padding: 0.75rem;
+    border: 1px solid var(--dnd-table-border);
+}
+
+/* Code blocks */
+.new-dnd pre {
+    background-color: var(--dnd-code-bg);
+    border: 1px solid var(--dnd-code-border);
+    border-radius: 4px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.new-dnd code {
+    font-family: 'Consolas', 'Monaco', monospace;
+    background-color: var(--dnd-code-bg);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+/* Links */
+.new-dnd a {
+    color: var(--dnd-accent);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--dnd-accent);
+    transition: all 0.3s ease;
+}
+
+.new-dnd a:hover {
+    color: var(--dnd-primary);
+    border-bottom: 1px solid var(--dnd-primary);
+}
+
+/* Horizontal rule */
+.new-dnd hr {
+    border: none;
+    border-top: 2px solid var(--dnd-border);
+    margin: 2rem 0;
+}
+
+/* Images */
+.new-dnd img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--dnd-border);
+    border-radius: 4px;
+    margin: 1.5rem 0;
+}
+
+/* Callouts */
+.new-dnd .callout {
+    background-color: var(--dnd-quote-bg);
+    border: 1px solid var(--dnd-quote-border);
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .new-dnd {
+        padding: 1rem;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .new-dnd h1 {
+        font-size: 2rem;
+    }
+    
+    .new-dnd h2 {
+        font-size: 1.75rem;
+    }
+} 
