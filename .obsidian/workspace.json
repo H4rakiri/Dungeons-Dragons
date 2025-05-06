@@ -15,7 +15,7 @@
               "state": {
                 "file": "Рандомайзеры d100.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "Рандомайзеры d100"
@@ -108,6 +108,69 @@
               "icon": "dices",
               "title": "Dice Tray"
             }
+          },
+          {
+            "id": "aac228fb8e3b629c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Рандомайзеры d100.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Рандомайзеры d100"
+            }
+          },
+          {
+            "id": "508d4465a2bdbd49",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Рандомайзеры d100.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Рандомайзеры d100"
+            }
+          },
+          {
+            "id": "5ab05797b52c1488",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "e6c568bed947f2d8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Рандомайзеры d100.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура Рандомайзеры d100"
+            }
           }
         ]
       },
@@ -148,6 +211,12 @@
   },
   "active": "a2e6f42456f07e2f",
   "lastOpenFiles": [
+    "d100 Случайных событий в таверне.md",
+    "d100 Эффектов оружия.md",
+    "Рандомайзеры d100.md",
+    "Таблица состояний.md",
+    "Таблица магических предметов.md",
+    "d100 Галлюцинаций.md",
     "d100 Случайных событий на улице.md",
     "Заклинания/Таблица с заклинаниями.md",
     "d100 случайных событий на улице.md",
@@ -158,14 +227,9 @@
     "Заклинания/Заклинания/Ашардалонова поступь.md",
     "Заклинания/Заклинания/Антипатия-симпатия.md",
     "Заклинания/Таблица с заклинаниями 1.md",
-    "Рандомайзеры d100.md",
-    "d100 Галлюцинаций.md",
-    "d100 Эффектов оружия.md",
     "Тест таблица.md",
-    "Таблица магических предметов.md",
     "Предметы/Магические предметы/Предметы/Адская машина Лума Безумного.md",
     "Предметы/Магические предметы/Предметы/Адское оружие.md",
-    "Таблица состояний.md",
     "NPCs/Генератор имен.md",
     "Бестиарий/Существа/Автогном.md",
     "Состояния/Бессознательный.md",
@@ -173,7 +237,6 @@
     "Состояния/Невидимый.md",
     "Состояния/Недееспособный.md",
     "Состояния/Истощенный.md",
-    "Состояния/Схваченный.md",
     "Состояния",
     "Заклинания/Заклинания",
     "Заклинания",
