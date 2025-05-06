@@ -5,6 +5,8 @@
     "tags": "tags",
     "min_cost": "number",
     "speed": "number",
-    "armorClass": "number"
+    "armorClass": "number",
+    "dg-publish": "checkbox",
+    "dg-home": "checkbox"
   }
 }

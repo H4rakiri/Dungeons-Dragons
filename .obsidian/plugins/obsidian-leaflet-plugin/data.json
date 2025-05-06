@@ -2,7 +2,7 @@
   "mapMarkers": [
     {
       "id": "my-map",
-      "lastAccessed": 1746102872532,
+      "lastAccessed": 1746549512180,
       "markers": [
         {
           "id": "ID_cb19bb99180b",
@@ -25,7 +25,7 @@
       "overlays": [],
       "shapes": [],
       "files": [
-        "Интерактивные карты/Карта 1.md"
+        "07 - Интерактивные карты/Карта 1.md"
       ]
     }
   ],
