@@ -4,10 +4,13 @@
   "dataview",
   "obsidian-sortable",
   "obsidian-dice-roller",
-  "obsidian-hover-editor",
   "omnisearch",
   "remember-cursor-position",
   "dnd-loot-generator",
   "loot-generator",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-leaflet-plugin",
+  "exp-calculator",
+  "pexels-banner",
+  "obsidian-hover-editor"
 ]

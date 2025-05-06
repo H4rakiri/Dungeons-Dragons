@@ -3,6 +3,8 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "min_cost": "number"
+    "min_cost": "number",
+    "speed": "number",
+    "armorClass": "number"
   }
 }
