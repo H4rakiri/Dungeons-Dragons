@@ -83,6 +83,13 @@
       "resultText": "1d20\n[16]",
       "timestamp": 1746624680007,
       "id": "uznutLkz6Nz3"
+    },
+    {
+      "result": "103",
+      "original": "6d20",
+      "resultText": "6d20\n[17, 20, 19, 18, 14, 15]",
+      "timestamp": 1746624693458,
+      "id": "wS6Cu8xQXyOi"
     }
   ]
 }
