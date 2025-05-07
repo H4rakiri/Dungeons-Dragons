@@ -11,10 +11,14 @@
             "id": "22413bfa3b33eac4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "99 - Общие ресурсы/99 - Остальное/Шаблоны/(Шаблон) NPC.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "(Шаблон) NPC"
             }
           }
         ]
@@ -219,8 +223,9 @@
       "exp-calculator:Experience Calculator": false
     }
   },
-  "active": "4a45a0a156021b3a",
+  "active": "22413bfa3b33eac4",
   "lastOpenFiles": [
+    "99 - Общие ресурсы/99 - Остальное/Шаблоны/(Шаблон) NPC.md",
     "01 - Кампейны/Кампейн 1/03 - Карта/Leaflet Инструкция.md",
     "02 - Ваншоты/Ваншот 1",
     "01 - Кампейны/Кампейн 1",
