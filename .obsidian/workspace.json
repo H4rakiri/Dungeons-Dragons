@@ -27,102 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Удачный выпад.md",
+                "file": "99 - Общие ресурсы/99 - Остальное/Карточки/Удачный выпад.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Удачный выпад"
-            }
-          }
-        ]
-      },
-      {
-        "id": "118efe5361997d24",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "124fd5a05424a082",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Удачный выпад.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Удачный выпад"
-            }
-          },
-          {
-            "id": "94df5821073402aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Удачный выпад.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Удачный выпад"
-            }
-          },
-          {
-            "id": "6a71505722a3bb65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Огненный настрой.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Огненный настрой"
-            }
-          },
-          {
-            "id": "d166bb4cb31d26e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Шепот интуиции.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Шепот интуиции"
-            }
-          },
-          {
-            "id": "6815995ffc5f589e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "На грани.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "На грани"
-            }
-          },
-          {
-            "id": "1a66900402b35cdb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Легкость бытия.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Легкость бытия"
             }
           }
         ]
@@ -327,18 +237,21 @@
       "exp-calculator:Experience Calculator": false
     }
   },
-  "active": "124fd5a05424a082",
+  "active": "ed0f09bfb53ad4e2",
   "lastOpenFiles": [
-    "Легкость бытия.md",
-    "На грани.md",
-    "Шепот интуиции.md",
-    "Огненный настрой.md",
-    "Храбрость новичка.md",
-    "Удачный выпад.md",
+    "Карточки.md",
     "Карточки_вдохновения.md",
+    "99 - Общие ресурсы/99 - Остальное/Карточки/Яростный рёв.md",
+    "99 - Общие ресурсы/99 - Остальное/Карточки/Осторожность.md",
+    "99 - Общие ресурсы/99 - Остальное/Карточки/Быстрый шаг.md",
+    "99 - Общие ресурсы/99 - Остальное/Карточки/Легкость бытия.md",
+    "99 - Общие ресурсы/99 - Остальное/Карточки/На грани.md",
+    "99 - Общие ресурсы/99 - Остальное/Карточки/Шепот интуиции.md",
+    "99 - Общие ресурсы/99 - Остальное/Карточки/Огненный настрой.md",
+    "99 - Общие ресурсы/99 - Остальное/Карточки/Удачный выпад.md",
+    "99 - Общие ресурсы/99 - Остальное/Карточки/Храбрость новичка.md",
     "99 - Общие ресурсы/99 - Остальное/Карточки/Кошачья ловкость.md",
     "99 - Общие ресурсы/99 - Остальное/Карточки/Воля к победе.md",
-    "Карточки.md",
     "99 - Общие ресурсы/99 - Остальное/Карточки/Острый глаз.md",
     "Books/1984.md",
     "Cards view.md",
@@ -353,9 +266,6 @@
     "Books/The Outsider.md",
     "Books/The Great Gatsby.md",
     "Books/The Book of Five Rings.md",
-    "Books/Swords of the Secret.md",
-    "Books/Superman Kryptonite Nevermore.md",
-    "Books/Random Book.md",
     "Books",
     "Attachments/Pasted image 20240720215549.png",
     "Attachments/Pasted image 20240720213805.png",
