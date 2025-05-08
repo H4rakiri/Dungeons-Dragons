@@ -1,0 +1,14 @@
+.npc-portrait {
+  float: right;
+  margin: 0 0 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  width: 100%;
+}
+
+.npc-portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
