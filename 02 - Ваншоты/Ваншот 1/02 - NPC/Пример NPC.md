@@ -8,7 +8,7 @@ status:
 first_seen: 
 last_seen:
 ---
-
+![[Джейн.jpg]]
 # Имя: 
 
 > [!info] Основная информация 
