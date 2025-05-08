@@ -1,11 +1,11 @@
 {
-  "attachmentFolderPath": "./assets/${filename}",
+  "attachmentFolderPath": "99 - Общие ресурсы/99 - Остальное/Ассеты",
   "attachmentRenameMode": "Only pasted images",
   "customTokensStr": "",
   "duplicateNameSeparator": " ",
   "emptyAttachmentFolderBehavior": "DeleteWithEmptyParents",
   "excludePaths": [],
-  "generatedAttachmentFilename": "file-${date:YYYYMMDDHHmmssSSS}",
+  "generatedAttachmentFilename": "${originalCopiedFileName}",
   "includePaths": [],
   "jpegQuality": 0.8,
   "shouldConvertPastedImagesToJpeg": false,

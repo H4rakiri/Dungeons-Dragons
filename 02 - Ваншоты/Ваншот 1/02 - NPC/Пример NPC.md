@@ -8,6 +8,7 @@ status:
 first_seen: 
 last_seen:
 ---
+
 # Имя: 
 
 > [!info] Основная информация 
