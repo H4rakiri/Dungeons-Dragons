@@ -8,7 +8,7 @@ status:
 first_seen: 
 last_seen:
 ---
-![[jane.jpg|center|200]]
+
 # Имя: 
 
 > [!info] Основная информация 
