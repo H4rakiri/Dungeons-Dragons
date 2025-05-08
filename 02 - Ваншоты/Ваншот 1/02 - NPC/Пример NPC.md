@@ -8,7 +8,7 @@ status:
 first_seen: 
 last_seen:
 ---
-
+![1746730807614_50f39feefd36f890e9a9754dcc09610a.jpg|200](1746730807614_50f39feefd36f890e9a9754dcc09610a.jpg)
 # Имя: 
 
 > [!info] Основная информация 
