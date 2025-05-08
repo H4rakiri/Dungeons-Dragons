@@ -8,9 +8,6 @@ status:
 first_seen: 
 last_seen:
 ---
-<div class="npc-portrait">
-![image](99 - Общие ресурсы/99 - Остальное/Портреты богов/Баал.jpg)
-</div>
 # Имя: 
 
 > [!info] Основная информация 
