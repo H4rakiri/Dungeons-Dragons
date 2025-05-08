@@ -181,9 +181,19 @@
               "icon": "dice",
               "title": "Experience Calculator"
             }
+          },
+          {
+            "id": "aee9c002dc198f9c",
+            "type": "leaf",
+            "state": {
+              "type": "image-add-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Image Add"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       },
       {
         "id": "ae0fd52d4ef4e0d6",
@@ -225,8 +235,10 @@
       "exp-calculator:Experience Calculator": false
     }
   },
-  "active": "b34e1a4b20f4ae18",
+  "active": "aee9c002dc198f9c",
   "lastOpenFiles": [
+    "99 - Общие ресурсы/99 - Остальное/Ассеты/Sword-Coast-Map_HighRes.jpg",
+    "99 - Общие ресурсы/99 - Остальное/Ассеты/пенисс.jpg",
     "99 - Общие ресурсы/99 - Остальное/Ассеты/Петя.jpg",
     "02 - Ваншоты/Ваншот 1/02 - NPC/Пример NPC.md",
     "99 - Общие ресурсы/99 - Остальное/Ассеты/Какая то карта.jpg",
@@ -244,7 +256,6 @@
     "Тест",
     "S - Images Adjustments.css.md",
     "99 - Общие ресурсы/99 - Остальное/Ассеты",
-    "50f39feefd36f890e9a9754dcc09610a 1.jpg",
     "99 - Общие ресурсы/99 - Остальное/Шаблоны/(Шаблон) NPC.md",
     "Карточки.md",
     "01 - Кампейны/Кампейн 1/06 - Цитатник/Ситуации.md",
