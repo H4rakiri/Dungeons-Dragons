@@ -8,6 +8,7 @@ status:
 first_seen: 
 last_seen:
 ---
+![[50f39feefd36f890e9a9754dcc09610a 1.jpg|right]]
 # Имя: 
 
 > [!info] Основная информация 
