@@ -1,0 +1,36 @@
+.image-add-modal {
+  padding: 20px;
+}
+
+.image-add-modal .setting-item {
+  margin: 15px 0;
+}
+
+.image-add-modal select {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.image-add-modal button {
+  margin: 10px 0;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  cursor: pointer;
+}
+
+.image-add-modal button:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+.image-preview {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  text-align: center;
+}
