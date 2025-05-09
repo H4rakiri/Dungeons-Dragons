@@ -144,7 +144,7 @@
   pointer-events: none;
   mix-blend-mode: screen;
   border-radius: 4px;
-  filter: hue-rotate(180deg) brightness(1.2)
+  filter: hue-rotate(90deg) brightness(1.2)
     drop-shadow(0 0 6px var(--interactive-accent));
   box-shadow: 0 0 8px 2px var(--interactive-accent);
 }
