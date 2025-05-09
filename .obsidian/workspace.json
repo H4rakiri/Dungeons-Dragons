@@ -28,8 +28,8 @@
               "type": "markdown",
               "state": {
                 "file": "Ширма.md",
-                "mode": "preview",
-                "source": true
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
               "title": "Ширма"
@@ -251,7 +251,7 @@
       "initiative-hp-tracker:Открыть трекер инициативы": false
     }
   },
-  "active": "eb5a58540c4b539d",
+  "active": "a10859602b5a53d4",
   "lastOpenFiles": [
     "1746730807614_50f39feefd36f890e9a9754dcc09610a.jpg",
     "Ширма.md",

@@ -14,5 +14,21 @@
     "maxHp": 80,
     "currentHp": 80,
     "tempHp": 0
+  },
+  {
+    "id": "1746793489886",
+    "name": "Гена",
+    "initiative": 20,
+    "maxHp": 70,
+    "currentHp": 70,
+    "tempHp": 0
+  },
+  {
+    "id": "1746793514798",
+    "name": "Гном",
+    "initiative": 12,
+    "maxHp": 45,
+    "currentHp": 45,
+    "tempHp": 0
   }
 ]
