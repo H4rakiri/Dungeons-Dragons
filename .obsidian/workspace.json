@@ -83,7 +83,7 @@
       {
         "id": "9b142abffb6c56c1",
         "type": "tabs",
-        "dimension": 56.67903525046383,
+        "dimension": 56.54692931633836,
         "children": [
           {
             "id": "c351b199a5e40b4a",
@@ -177,14 +177,24 @@
               "icon": "dice",
               "title": "Experience Calculator"
             }
+          },
+          {
+            "id": "eb5a58540c4b539d",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Трекер Инициативы и ХП"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       },
       {
         "id": "ae0fd52d4ef4e0d6",
         "type": "tabs",
-        "dimension": 43.32096474953617,
+        "dimension": 43.45307068366164,
         "children": [
           {
             "id": "bc5e7b3358898ca0",
@@ -200,7 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.5
+    "width": 356.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,10 +228,11 @@
       "pexels-banner:🚩 Pixel Banner Menu": false,
       "digitalgarden:Digital Garden Publication Center": false,
       "obsidian-leaflet-plugin:Open Leaflet Map": false,
-      "exp-calculator:Experience Calculator": false
+      "exp-calculator:Experience Calculator": false,
+      "initiative-hp-tracker:Открыть трекер инициативы": false
     }
   },
-  "active": "4a45a0a156021b3a",
+  "active": "eb5a58540c4b539d",
   "lastOpenFiles": [
     "99 - Общие ресурсы/99 - Остальное/Ассеты/Картв.jpg",
     "02 - Ваншоты/Ваншот 1/02 - NPC/Пример NPC.md",
