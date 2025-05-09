@@ -136,11 +136,15 @@
 .temp-hp-bar {
   height: 100%;
   background-color: var(--text-muted);
-  opacity: 0.5;
+  opacity: 0.3;
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 2;
   pointer-events: none;
+  mix-blend-mode: overlay;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
 }
 
 .hp-controls {
