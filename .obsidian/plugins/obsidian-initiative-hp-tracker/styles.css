@@ -135,7 +135,7 @@
 
 .temp-hp-bar {
   height: 120%;
-  background-color: #3ecfff;
+  background-color: var(--interactive-accent);
   opacity: 0.5;
   position: absolute;
   top: -2px;
@@ -144,7 +144,9 @@
   pointer-events: none;
   mix-blend-mode: screen;
   border-radius: 4px;
-  box-shadow: 0 0 4px #3ecfff80;
+  filter: hue-rotate(180deg) brightness(1.2)
+    drop-shadow(0 0 6px var(--interactive-accent));
+  box-shadow: 0 0 8px 2px var(--interactive-accent);
 }
 
 .hp-controls {
