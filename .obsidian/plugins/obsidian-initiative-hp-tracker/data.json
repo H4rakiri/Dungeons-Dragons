@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": "1746793461178",
+    "name": "Артис",
+    "initiative": 16,
+    "maxHp": 75,
+    "currentHp": 75,
+    "tempHp": 0
+  },
+  {
+    "id": "1746793471582",
+    "name": "Далакхат",
+    "initiative": 15,
+    "maxHp": 80,
+    "currentHp": 80,
+    "tempHp": 0
+  }
+]
