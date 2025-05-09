@@ -4,7 +4,7 @@
     "name": "123",
     "initiative": 123,
     "maxHp": 123,
-    "currentHp": 123,
-    "tempHp": 123
+    "currentHp": 26,
+    "tempHp": 0
   }
 ]
