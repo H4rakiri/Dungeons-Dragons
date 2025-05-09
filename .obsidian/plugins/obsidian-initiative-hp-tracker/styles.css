@@ -119,20 +119,18 @@
 .hp-bar-container {
   position: relative;
   width: 100%;
-  height: 14px;
-  background: none;
-  border-radius: 7px;
+  height: 16px;
+  background-color: var(--background-modifier-border);
+  border-radius: 8px;
   overflow: visible;
-  margin: 0;
-  padding: 0;
 }
 
 .temp-hp-frame {
   position: absolute;
-  left: 0;
-  top: 0;
-  height: 14px;
-  border-radius: 7px;
+  left: -2px;
+  top: -2px;
+  height: 20px;
+  border-radius: 10px;
   z-index: 1;
   pointer-events: none;
   border: 2px solid var(--interactive-accent);
@@ -145,10 +143,10 @@
 
 .hp-bar {
   position: absolute;
-  left: 0;
-  top: 2px;
-  height: 10px;
-  border-radius: 5px;
+  left: 4px;
+  top: 4px;
+  height: 8px;
+  border-radius: 4px;
   background-color: var(--interactive-accent);
   z-index: 2;
   transition: width 0.3s;
