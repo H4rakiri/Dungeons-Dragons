@@ -1,0 +1,10 @@
+{
+    "id": "initiative-hp-tracker",
+    "name": "Трекер Инициативы и ХП",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "Визуальный трекер инициативы и ХП для боев в D&D на боковой панели",
+    "author": "Your Name",
+    "authorUrl": "",
+    "isDesktopOnly": false
+} 
